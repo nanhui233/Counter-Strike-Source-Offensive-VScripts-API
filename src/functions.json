@@ -1,0 +1,2470 @@
+[
+  {
+    "function": "AddThinkToEnt",
+    "signature": "void AddThinkToEnt(handle, string)",
+    "description": "Adds a late bound think function to the C++ think tables for the obj",
+    "description_zh": "为 obj 的 C++ think 表添加一个后期绑定的 think 函数"
+  },
+  {
+    "function": "CBaseAnimating::BecomeRagdollOnClient",
+    "signature": "bool CBaseAnimating::BecomeRagdollOnClient(Vector)",
+    "description": "Acts like the BecomeRagdoll input, with the required impulse value applied as a force on the ragdoll. Does NOT spawn a prop_ragdoll or any other entity.",
+    "description_zh": "其行为类似于 BecomeRagdoll 输入，但所需的冲量值会作为力作用于布娃娃效果上。不会生成 prop_ragdoll 或任何其他实体。"
+  },
+  {
+    "function": "CBaseAnimating::DispatchAnimEvents",
+    "signature": "void CBaseAnimating::DispatchAnimEvents(handle)",
+    "description": "Dispatch animation events to a CBaseAnimating entity. Find a bodygroup ID by name. Returns -1 if the bodygroup does not exist.",
+    "description_zh": "将动画事件分发到一个CBaseAnimating实体。通过名称查找一个身体组ID。如果该身体组不存在，返回-1。"
+  },
+  {
+    "function": "CBaseAnimating::FindBodygroupByName",
+    "signature": "int CBaseAnimating::FindBodygroupByName(string)",
+    "description": ""
+  },
+  {
+    "function": "CBaseAnimating::GetAttachmentAngles",
+    "signature": "QAngle CBaseAnimating::GetAttachmentAngles(int)",
+    "description": "Get the attachement id's angles as a p,y,r vector",
+    "description_zh": "获取附件ID的角度，作为俯仰、偏航、滚转向量（p, y, r 向量）"
+  },
+  {
+    "function": "CBaseAnimating::GetAttachmentBone",
+    "signature": "int CBaseAnimating::GetAttachmentBone(int)",
+    "description": "Get the attachement id's angles as a p,y,r vector Get an attachment's parent bone index by ID.",
+    "description_zh": "获取附件ID的角度作为p, y, r向量。通过ID获取附件的父骨骼索引。"
+  },
+  {
+    "function": "CBaseAnimating::GetAttachmentOrigin",
+    "signature": "Vector CBaseAnimating::GetAttachmentOrigin(int)",
+    "description": "Get the attachement id's origin vector",
+    "description_zh": "获取附件ID的原始向量"
+  },
+  {
+    "function": "CBaseAnimating::GetBodygroup",
+    "signature": "int CBaseAnimating::GetBodygroup(int)",
+    "description": "Get the bodygroup value by bodygroup ID.",
+    "description_zh": "通过身体组ID获取身体组值。"
+  },
+  {
+    "function": "CBaseAnimating::GetBodygroupName",
+    "signature": "string CBaseAnimating::GetBodygroupName(int)",
+    "description": "Get the bodygroup's name by ID.",
+    "description_zh": "通过ID获取身体组的名称。"
+  },
+  {
+    "function": "CBaseAnimating::GetBodygroupPartName",
+    "signature": "string CBaseAnimating::GetBodygroupPartName(int, int)",
+    "description": "Get name by group and part",
+    "description_zh": "通过组和部分获取名称"
+  },
+  {
+    "function": "CBaseAnimating::GetBoneAngles",
+    "signature": "QAngle CBaseAnimating::GetBoneAngles(int)",
+    "description": "Get the bone's angles as a QAngle, by ID.",
+    "description_zh": "通过ID获取骨骼的角度作为QAngle。"
+  },
+  {
+    "function": "CBaseAnimating::GetBoneOrigin",
+    "signature": "Vector CBaseAnimating::GetBoneOrigin(int)",
+    "description": "Get the bone's origin Vector by ID.",
+    "description_zh": "通过ID获取骨骼的原点向量。"
+  },
+  {
+    "function": "CBaseAnimating::GetCycle",
+    "signature": "float CBaseAnimating::GetCycle()",
+    "description": "Gets the model's current animation cycle.",
+    "description_zh": "获取模型当前的动画循环。"
+  },
+  {
+    "function": "CBaseAnimating::GetModelScale",
+    "signature": "float CBaseAnimating::GetModelScale()",
+    "description": "Get the model's scale.",
+    "description_zh": "获取模型的缩放比例。"
+  },
+  {
+    "function": "CBaseAnimating::GetPlaybackRate",
+    "signature": "float CBaseAnimating::GetPlaybackRate()",
+    "description": "Get the current animation's playback rate.",
+    "description_zh": "获取当前动画的播放速度。"
+  },
+  {
+    "function": "CBaseAnimating::GetPoseParameter",
+    "signature": "float CBaseAnimating::GetPoseParameter(int)",
+    "description": "Gets a pose parameter value.",
+    "description_zh": "获取姿态参数值。"
+  },
+  {
+    "function": "CBaseAnimating::GetSequence",
+    "signature": "int CBaseAnimating::GetSequence()",
+    "description": "Get the current-playing sequence's ID.",
+    "description_zh": "获取当前播放序列的ID。"
+  },
+  {
+    "function": "CBaseAnimating::GetSequenceActivityName",
+    "signature": "string CBaseAnimating::GetSequenceActivityName(int)",
+    "description": "Get the activity name for a sequence by sequence ID.",
+    "description_zh": "通过序列ID获取对应的活动名称。"
+  },
+  {
+    "function": "CBaseAnimating::GetSequenceDuration",
+    "signature": "float CBaseAnimating::GetSequenceDuration(int)",
+    "description": "Get a sequence duration in seconds by sequence ID.",
+    "description_zh": "通过序列ID获取序列的持续时间（以秒为单位）。"
+  },
+  {
+    "function": "CBaseAnimating::GetSequenceName",
+    "signature": "string CBaseAnimating::GetSequenceName(int)",
+    "description": "Get a sequence duration in seconds by sequence ID.",
+    "description_zh": "通过序列ID获取序列的持续时间（以秒为单位）。"
+  },
+  {
+    "function": "CBaseAnimating::GetSkin",
+    "signature": "int CBaseAnimating::GetSkin()",
+    "description": "Gets the current skin index.",
+    "description_zh": "获取当前皮肤索引。"
+  },
+  {
+    "function": "CBaseAnimating::IsSequenceFinished",
+    "signature": "bool CBaseAnimating::IsSequenceFinished()",
+    "description": "Ask whether the main sequence is done playing",
+    "description_zh": "询问主序列是否已经播放完毕"
+  },
+  {
+    "function": "CBaseAnimating::LookupActivity",
+    "signature": "int CBaseAnimating::LookupActivity(string)",
+    "description": "Get the named activity index. Returns -1 if the activity does not exist.",
+    "description_zh": "获取指定活动的索引。如果该活动不存在，返回-1。"
+  },
+  {
+    "function": "CBaseAnimating::LookupAttachment",
+    "signature": "int CBaseAnimating::LookupAttachment(string)",
+    "description": "Get the named attachement id",
+    "description_zh": "获取指定的附件ID"
+  },
+  {
+    "function": "CBaseAnimating::LookupBone",
+    "signature": "int CBaseAnimating::LookupBone(string)",
+    "description": "Get the named bone index. Returns -1 if the bone does not exist.",
+    "description_zh": "获取指定骨骼的索引。如果该骨骼不存在，返回-1。"
+  },
+  {
+    "function": "CBaseAnimating::LookupPoseParameter",
+    "signature": "int CBaseAnimating::LookupPoseParameter(string)",
+    "description": "Looks up a pose parameter index by name",
+    "description_zh": "通过名称查找姿态参数索引"
+  },
+  {
+    "function": "CBaseAnimating::LookupSequence",
+    "signature": "int CBaseAnimating::LookupSequence(string)",
+    "description": "Looks up a sequence by names of sequences or activities. Returns -1 if the sequence does not exist.",
+    "description_zh": "通过序列或活动的名称查找序列。如果该序列不存在，返回-1。"
+  },
+  {
+    "function": "CBaseAnimating::ResetSequence",
+    "signature": "void CBaseAnimating::ResetSequence(int)",
+    "description": "Reset a sequence by sequence ID. If the ID is different than the current sequence, switch to the new sequence.",
+    "description_zh": "通过序列ID重置序列。如果该ID与当前序列不同，则切换到新的序列。"
+  },
+  {
+    "function": "CBaseAnimating::SetBodygroup",
+    "signature": "void CBaseAnimating::SetBodygroup(int, int)",
+    "description": "Set the bodygroup by ID.",
+    "description_zh": "通过ID设置身体组。"
+  },
+  {
+    "function": "CBaseAnimating::SetCycle",
+    "signature": "void CBaseAnimating::SetCycle(float)",
+    "description": "Sets the model's current animation cycle from 0 to 1.",
+    "description_zh": "将模型的当前动画周期设置为0到1之间。"
+  },
+  {
+    "function": "CBaseAnimating::SetModelScale",
+    "signature": "void CBaseAnimating::SetModelScale(float, float)",
+    "description": "Changes a model's scale over time. Set the change duration to 0.0 to change the scale instantly.",
+    "description_zh": "随时间改变模型的大小。将变化持续时间设为0.0将以瞬时方式改变大小。"
+  },
+  {
+    "function": "CBaseAnimating::SetModelSimple",
+    "signature": "void CBaseAnimating::SetModelSimple(string)",
+    "description": "Set a model for this entity. Matches easier behaviour of the SetModel input, automatically precaches, maintains sequence/cycle if possible. Also clears the bone cache.",
+    "description_zh": "为该实体设置一个模型。与SetModel输入更容易的行为相匹配，自动预加载资源，如果可能的话，保持序列/循环。同时清除骨骼缓存。"
+  },
+  {
+    "function": "CBaseAnimating::SetPlaybackRate",
+    "signature": "void CBaseAnimating::SetPlaybackRate(float)",
+    "description": "Set the current animation's playback rate.",
+    "description_zh": "设置当前动画的播放速度。"
+  },
+  {
+    "function": "CBaseAnimating::SetPoseParameter",
+    "signature": "float CBaseAnimating::SetPoseParameter(int, float)",
+    "description": "Sets a pose parameter value. Returns the effective value after clamping or looping.",
+    "description_zh": "设置姿态参数的值。返回经过限制或循环后的有效值。"
+  },
+  {
+    "function": "CBaseAnimating::SetSequence",
+    "signature": "void CBaseAnimating::SetSequence(int)",
+    "description": "Plays a sequence by sequence ID.",
+    "description_zh": "按序列 ID 播放序列。"
+  },
+  {
+    "function": "CBaseAnimating::SetSkin",
+    "signature": "void CBaseAnimating::SetSkin(int)",
+    "description": "Sets the model's skin.",
+    "description_zh": "设置模型的皮肤。"
+  },
+  {
+    "function": "CBaseAnimating::StopAnimation",
+    "signature": "void CBaseAnimating::StopAnimation()",
+    "description": "Stop the current animation (same as SetPlaybackRate 0.0)",
+    "description_zh": "停止当前动画（与设置播放速率0.0相同）"
+  },
+  {
+    "function": "CBaseAnimating::StudioFrameAdvance",
+    "signature": "void CBaseAnimating::StudioFrameAdvance()",
+    "description": "Sets a pose parameter value. Returns the effective value after clamping or looping.",
+    "description_zh": "设置姿态参数的值。返回经过限制或循环后的有效值。"
+  },
+  {
+    "function": "CBaseAnimating::StudioFrameAdvanceManual",
+    "signature": "void CBaseAnimating::StudioFrameAdvanceManual(float)",
+    "description": "Sets a pose parameter value. Returns the effective value after clamping or looping.",
+    "description_zh": "设置姿态参数的值。返回经过限制或循环后的有效值。"
+  },
+  {
+    "function": "CBaseCSGrenadeProjectile::SetDetonateTimerLength",
+    "signature": "void CBaseCSGrenadeProjectile::SetDetonateTimerLength(float)",
+    "description": ""
+  },
+  {
+    "function": "CBaseCombatCharacter::GetActiveWeapon",
+    "signature": "handle CBaseCombatCharacter::GetActiveWeapon()",
+    "description": ""
+  },
+  {
+    "function": "CBaseCombatCharacter::GetAmmoCount",
+    "signature": "int CBaseCombatCharacter::GetAmmoCount(int)",
+    "description": "Returns number of given ammo the character holds.",
+    "description_zh": "返回角色所持有的指定弹药数量。"
+  },
+  {
+    "function": "CBaseCombatCharacter::GiveAmmo",
+    "signature": "int CBaseCombatCharacter::GiveAmmo(int, int, bool)",
+    "description": "Gives the character some ammo.",
+    "description_zh": "给角色一些弹药。"
+  },
+  {
+    "function": "CBaseCombatCharacter::RemoveAllAmmo",
+    "signature": "void CBaseCombatCharacter::RemoveAllAmmo()",
+    "description": "Takes all ammo away from the character.",
+    "description_zh": "从角色身上移除所有弹药。"
+  },
+  {
+    "function": "CBaseCombatCharacter::RemoveAmmo",
+    "signature": "void CBaseCombatCharacter::RemoveAmmo(int, int)",
+    "description": "Takes some ammo away from the character.",
+    "description_zh": "从角色那里移除一些弹药。"
+  },
+  {
+    "function": "CBaseCombatCharacter::Weapon_CanSwitchTo",
+    "signature": "bool CBaseCombatCharacter::Weapon_CanSwitchTo(handle)",
+    "description": "Returns whether or not we can switch to the given weapon",
+    "description_zh": "返回是否可以切换到给定的武器"
+  },
+  {
+    "function": "CBaseCombatCharacter::Weapon_CanUse",
+    "signature": "bool CBaseCombatCharacter::Weapon_CanUse(handle)",
+    "description": "Can this character operate this weapon?",
+    "description_zh": "这个角色能操作这种武器吗？"
+  },
+  {
+    "function": "CBaseCombatCharacter::Weapon_Drop",
+    "signature": "void CBaseCombatCharacter::Weapon_Drop(handle, bool, Vector, bool, Vector)",
+    "description": "Drop the given weapon, optionally throwing it at the given target position",
+    "description_zh": "放下给定的武器，可选择将其投掷到指定的目标位置"
+  },
+  {
+    "function": "CBaseCombatCharacter::Weapon_Equip",
+    "signature": "void CBaseCombatCharacter::Weapon_Equip(handle)",
+    "description": "Add new weapon to the character",
+    "description_zh": "将新武器添加到角色中"
+  },
+  {
+    "function": "CBaseCombatCharacter::Weapon_GetSlot",
+    "signature": "handle CBaseCombatCharacter::Weapon_GetSlot(int)",
+    "description": "Returns the weapon (if any) in the requested slot",
+    "description_zh": "返回请求槽位中的武器（如果有的话）"
+  },
+  {
+    "function": "CBaseCombatCharacter::Weapon_OwnsThisType",
+    "signature": "handle CBaseCombatCharacter::Weapon_OwnsThisType(string)",
+    "description": "Returns weapon if already owns a weapon of this class",
+    "description_zh": "如果已拥有该类别的武器，则返回该武器"
+  },
+  {
+    "function": "CBaseCombatCharacter::Weapon_Switch",
+    "signature": "bool CBaseCombatCharacter::Weapon_Switch(handle)",
+    "description": "Switches to the given weapon (providing it has ammo). Returns true if switch succeeded",
+    "description_zh": "切换到指定的武器（前提是该武器有弹药）。如果切换成功，返回 true。"
+  },
+  {
+    "function": "CBaseCombatWeapon::CanBeSelected",
+    "signature": "bool CBaseCombatWeapon::CanBeSelected()",
+    "description": "Can this weapon be selected?",
+    "description_zh": "此武器可以被选择吗？"
+  },
+  {
+    "function": "CBaseCombatWeapon::Clip1",
+    "signature": "int CBaseCombatWeapon::Clip1()",
+    "description": "Current ammo in clip1.",
+    "description_zh": "弹夹1中的当前弹药。"
+  },
+  {
+    "function": "CBaseCombatWeapon::Clip2",
+    "signature": "int CBaseCombatWeapon::Clip2()",
+    "description": "Current ammo in clip2.",
+    "description_zh": "弹夹2中的当前弹药。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetCanBePickedUp",
+    "signature": "bool CBaseCombatWeapon::GetCanBePickedUp()",
+    "description": "Get whether this weapon can be picked up.",
+    "description_zh": "获取此武器是否可以被拾取的状态。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetDefaultClip1",
+    "signature": "int CBaseCombatWeapon::GetDefaultClip1()",
+    "description": "Default size of clip1.",
+    "description_zh": "clip1 的默认大小"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetDefaultClip2",
+    "signature": "int CBaseCombatWeapon::GetDefaultClip2()",
+    "description": "Default size of clip2.",
+    "description_zh": "剪辑的默认大小。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetMaxClip1",
+    "signature": "int CBaseCombatWeapon::GetMaxClip1()",
+    "description": "Max size of clip1.",
+    "description_zh": "clip1 的最大尺寸"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetMaxClip2",
+    "signature": "int CBaseCombatWeapon::GetMaxClip2()",
+    "description": "Max size of clip2.",
+    "description_zh": "剪辑的最大尺寸"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetName",
+    "signature": "string CBaseCombatWeapon::GetName()",
+    "description": "Gets the weapon's internal name (not the targetname!)",
+    "description_zh": "获取武器的内部名称（不是目标名称！）"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetPosition",
+    "signature": "int CBaseCombatWeapon::GetPosition()",
+    "description": "Gets the weapon's current position.",
+    "description_zh": "获取武器的当前位置。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetPrimaryAmmoCount",
+    "signature": "int CBaseCombatWeapon::GetPrimaryAmmoCount()",
+    "description": "Current primary ammo count if no clip is used or to give a player if they pick up this weapon legacy style.",
+    "description_zh": "当前主武器弹药数量（若未使用弹匣）或当玩家以传统方式拾起此武器时给予的弹药数量。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetPrimaryAmmoType",
+    "signature": "int CBaseCombatWeapon::GetPrimaryAmmoType()",
+    "description": "Returns the primary ammo type.",
+    "description_zh": "返回主要弹药类型。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetPrintName",
+    "signature": "string CBaseCombatWeapon::GetPrintName()",
+    "description": "Gets the weapon's print name.",
+    "description_zh": "获取武器的打印名称。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetSecondaryAmmoCount",
+    "signature": "int CBaseCombatWeapon::GetSecondaryAmmoCount()",
+    "description": "Current secondary ammo count if no clip is used or to give a player if they pick up this weapon legacy style.",
+    "description_zh": "当前未使用弹匣的备用弹药数量，或以传统方式拾取该武器时给予玩家的弹药数量。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetSecondaryAmmoType",
+    "signature": "int CBaseCombatWeapon::GetSecondaryAmmoType()",
+    "description": "Returns the secondary ammo type.",
+    "description_zh": "返回次要弹药类型。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetSlot",
+    "signature": "int CBaseCombatWeapon::GetSlot()",
+    "description": "Gets the weapon's current slot.",
+    "description_zh": "获取武器的当前槽位。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetSoundsEnabled",
+    "signature": "bool CBaseCombatWeapon::GetSoundsEnabled()",
+    "description": "Get whether weapon sounds are enabled.",
+    "description_zh": "获取武器音效是否已启用。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetSubType",
+    "signature": "int CBaseCombatWeapon::GetSubType()",
+    "description": "Get the weapon subtype.",
+    "description_zh": "获取武器子类型。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetViewModel",
+    "signature": "string CBaseCombatWeapon::GetViewModel(int)",
+    "description": "Returns path to view model for this weapon.",
+    "description_zh": "返回此武器的视图模型路径。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetWeaponFlags",
+    "signature": "int CBaseCombatWeapon::GetWeaponFlags()",
+    "description": "Get the weapon flags.",
+    "description_zh": "获取武器标志。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetWeaponSound",
+    "signature": "string CBaseCombatWeapon::GetWeaponSound(int)",
+    "description": "Returns sound name for this weapon of the given sound ID. Use GetWeaponSoundFromString to find the sound ID by name!",
+    "description_zh": "根据给定的音效ID返回此武器的音效名称。使用 GetWeaponSoundFromString 可以通过名称查找音效ID！"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetWeight",
+    "signature": "int CBaseCombatWeapon::GetWeight()",
+    "description": "Get the weapon weighting/importance.",
+    "description_zh": "获取武器的权重/重要性。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetWorldModel",
+    "signature": "string CBaseCombatWeapon::GetWorldModel()",
+    "description": "Returns path to world model for this weapon.",
+    "description_zh": "返回此武器的世界模型路径。"
+  },
+  {
+    "function": "CBaseCombatWeapon::GetWpnData",
+    "signature": "handle CBaseCombatWeapon::GetWpnData()",
+    "description": "Returns this weapon's script as a table.",
+    "description_zh": "以表格形式返回此武器的脚本。"
+  },
+  {
+    "function": "CBaseCombatWeapon::HasAnyAmmo",
+    "signature": "bool CBaseCombatWeapon::HasAnyAmmo()",
+    "description": "Do we have any ammo?",
+    "description_zh": "我们有弹药吗？"
+  },
+  {
+    "function": "CBaseCombatWeapon::HasPrimaryAmmo",
+    "signature": "bool CBaseCombatWeapon::HasPrimaryAmmo()",
+    "description": "Do we have any primary ammo?",
+    "description_zh": "我们有主炮弹吗？"
+  },
+  {
+    "function": "CBaseCombatWeapon::HasSecondaryAmmo",
+    "signature": "bool CBaseCombatWeapon::HasSecondaryAmmo()",
+    "description": "Do we have any secondary ammo?",
+    "description_zh": "我们还有备用弹药吗？"
+  },
+  {
+    "function": "CBaseCombatWeapon::IsAllowedToSwitch",
+    "signature": "bool CBaseCombatWeapon::IsAllowedToSwitch()",
+    "description": "Are we allowed to switch to this weapon?",
+    "description_zh": "我们可以换用这种武器吗？"
+  },
+  {
+    "function": "CBaseCombatWeapon::IsMeleeWeapon",
+    "signature": "bool CBaseCombatWeapon::IsMeleeWeapon()",
+    "description": "Returns whether this is a melee weapon.",
+    "description_zh": "返回此武器是否为近战武器。"
+  },
+  {
+    "function": "CBaseCombatWeapon::PrimaryAttack",
+    "signature": "void CBaseCombatWeapon::PrimaryAttack()",
+    "description": "Force a primary attack.",
+    "description_zh": "强制进行一次主要攻击。"
+  },
+  {
+    "function": "CBaseCombatWeapon::SecondaryAttack",
+    "signature": "void CBaseCombatWeapon::SecondaryAttack()",
+    "description": "Force a secondary attack.",
+    "description_zh": "强制发动二次攻击。"
+  },
+  {
+    "function": "CBaseCombatWeapon::SetCanBePickedUp",
+    "signature": "void CBaseCombatWeapon::SetCanBePickedUp(bool)",
+    "description": "Set whether this weapon can be picked up.",
+    "description_zh": "设置此武器是否可以被拾起。"
+  },
+  {
+    "function": "CBaseCombatWeapon::SetClip1",
+    "signature": "void CBaseCombatWeapon::SetClip1(int)",
+    "description": "Set current ammo in clip1.",
+    "description_zh": "设置当前弹夹1的弹药。"
+  },
+  {
+    "function": "CBaseCombatWeapon::SetClip2",
+    "signature": "void CBaseCombatWeapon::SetClip2(int)",
+    "description": "Set current ammo in clip2.",
+    "description_zh": "设置当前弹药到第二弹匣。"
+  },
+  {
+    "function": "CBaseCombatWeapon::SetCustomViewModel",
+    "signature": "void CBaseCombatWeapon::SetCustomViewModel(string)",
+    "description": "Sets a custom view model for this weapon by model name",
+    "description_zh": "通过模型名称为该武器设置自定义视图模型"
+  },
+  {
+    "function": "CBaseCombatWeapon::SetCustomViewModelModelIndex",
+    "signature": "void CBaseCombatWeapon::SetCustomViewModelModelIndex(int)",
+    "description": "Sets a custom view model for this weapon by modelindex",
+    "description_zh": "通过模型索引为该武器设置自定义视图模型"
+  },
+  {
+    "function": "CBaseCombatWeapon::SetSoundsEnabled",
+    "signature": "void CBaseCombatWeapon::SetSoundsEnabled(bool)",
+    "description": "Set whether weapon sounds are enabled.",
+    "description_zh": "设置是否启用武器音效。"
+  },
+  {
+    "function": "CBaseCombatWeapon::SetSubType",
+    "signature": "void CBaseCombatWeapon::SetSubType(int)",
+    "description": "Set the weapon subtype.",
+    "description_zh": "设置武器子类型。"
+  },
+  {
+    "function": "CBaseCombatWeapon::UsesClipsForAmmo1",
+    "signature": "bool CBaseCombatWeapon::UsesClipsForAmmo1()",
+    "description": "Do we use clips for ammo 1?",
+    "description_zh": "我们用弹夹来装弹药1吗？"
+  },
+  {
+    "function": "CBaseCombatWeapon::UsesClipsForAmmo2",
+    "signature": "bool CBaseCombatWeapon::UsesClipsForAmmo2()",
+    "description": "Do we use clips for ammo 2?",
+    "description_zh": "我们用弹夹装子弹2吗？"
+  },
+  {
+    "function": "CBaseCombatWeapon::UsesPrimaryAmmo",
+    "signature": "bool CBaseCombatWeapon::UsesPrimaryAmmo()",
+    "description": "Do we use primary ammo?",
+    "description_zh": "我们使用主装药吗？"
+  },
+  {
+    "function": "CBaseCombatWeapon::UsesSecondaryAmmo",
+    "signature": "bool CBaseCombatWeapon::UsesSecondaryAmmo()",
+    "description": "Do we use secondary ammo?",
+    "description_zh": "我们使用备用弹药吗？"
+  },
+  {
+    "function": "CBaseCombatWeapon::VisibleInWeaponSelection",
+    "signature": "bool CBaseCombatWeapon::VisibleInWeaponSelection()",
+    "description": "Is this weapon visible in weapon selection?",
+    "description_zh": "此武器在武器选择中是否可见？"
+  },
+  {
+    "function": "CBaseEntity::AcceptInput",
+    "signature": "bool CBaseEntity::AcceptInput(string, string, handle, handle)",
+    "description": "Generate a synchronous I/O event",
+    "description_zh": "生成一个同步 I/O 事件"
+  },
+  {
+    "function": "CBaseEntity::AddEFlags",
+    "signature": "void CBaseEntity::AddEFlags(int)",
+    "description": "Adds the supplied flags to the Entity Flags in the entity.",
+    "description_zh": "将提供的标志添加到实体的实体标志中。"
+  },
+  {
+    "function": "CBaseEntity::AddFlag",
+    "signature": "void CBaseEntity::AddFlag(int)",
+    "description": "Adds the supplied flags to another separate player-related entity flags system in the entity.",
+    "description_zh": "将提供的标志添加到实体中的另一个独立的与玩家相关的实体标志系统中。"
+  },
+  {
+    "function": "CBaseEntity::AddSolidFlags",
+    "signature": "void CBaseEntity::AddSolidFlags(int)",
+    "description": "Adds the supplied flags to the Solid Flags in the entity.",
+    "description_zh": "将提供的标志添加到实体中的Solid标志中。"
+  },
+  {
+    "function": "CBaseEntity::ApplyAbsVelocityImpulse",
+    "signature": "void CBaseEntity::ApplyAbsVelocityImpulse(Vector)",
+    "description": "Apply a Velocity Impulse as a world space impulse vector. Works for most physics-based objects including dropped weapons.",
+    "description_zh": "在世界空间中应用一个速度冲量作为冲量向量。适用于大多数基于物理的对象，包括掉落的武器。"
+  },
+  {
+    "function": "CBaseEntity::ApplyLocalAngularVelocityImpulse",
+    "signature": "void CBaseEntity::ApplyLocalAngularVelocityImpulse(Vector)",
+    "description": "Apply an Angular Velocity Impulse in entity local space. The direction of the input vector is the rotation axis, and the length is the magnitude of the impulse.",
+    "description_zh": "在实体局部空间中施加一个角速度冲击。输入向量的方向为旋转轴，长度表示冲击的大小。"
+  },
+  {
+    "function": "CBaseEntity::ClearFlags",
+    "signature": "void CBaseEntity::ClearFlags()",
+    "description": "Sets the player-related entity flags to 0 on an entity, clearing them.",
+    "description_zh": "将实体相关的玩家标志位设置为0，即清除它们。"
+  },
+  {
+    "function": "CBaseEntity::ClearSolidFlags",
+    "signature": "void CBaseEntity::ClearSolidFlags()",
+    "description": "Sets Solid Flags to 0 on an entity, clearing them.",
+    "description_zh": "将实体的固态标志设置为0，清除它们。"
+  },
+  {
+    "function": "CBaseEntity::ConnectOutput",
+    "signature": "void CBaseEntity::ConnectOutput(string, string)",
+    "description": "Adds an I/O connection that will call the named function when the specified output fires",
+    "description_zh": "添加一个I/O连接，当指定的输出触发时将调用该命名函数。"
+  },
+  {
+    "function": "CBaseEntity::Destroy",
+    "signature": "void CBaseEntity::Destroy()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::DisableDraw",
+    "signature": "void CBaseEntity::DisableDraw()",
+    "description": "Enable drawing (removes EF_NODRAW)",
+    "description_zh": "启用绘制（移除 EF_NODRAW）"
+  },
+  {
+    "function": "CBaseEntity::DisconnectOutput",
+    "signature": "void CBaseEntity::DisconnectOutput(string, string)",
+    "description": "Removes a connected script function from an I/O event.",
+    "description_zh": "从I/O事件中移除一个已连接的脚本函数。"
+  },
+  {
+    "function": "CBaseEntity::DispatchSpawn",
+    "signature": "void CBaseEntity::DispatchSpawn()",
+    "description": "Alternative dispatch spawn, same as the one in CEntities, for convenience.",
+    "description_zh": "替代的调度生成方式，与CEntities中的方式相同，便于使用。"
+  },
+  {
+    "function": "CBaseEntity::EmitSound",
+    "signature": "void CBaseEntity::EmitSound(string)",
+    "description": "Plays a sound from this entity.",
+    "description_zh": "从此实体播放声音。"
+  },
+  {
+    "function": "CBaseEntity::EnableDraw",
+    "signature": "void CBaseEntity::EnableDraw()",
+    "description": "Disable drawing (sets EF_NODRAW)",
+    "description_zh": "禁用绘制（设置 EF_NODRAW）"
+  },
+  {
+    "function": "CBaseEntity::EyeAngles",
+    "signature": "QAngle CBaseEntity::EyeAngles()",
+    "description": "Returns the entity's eye angles",
+    "description_zh": "返回实体的视线角度"
+  },
+  {
+    "function": "CBaseEntity::EyePosition",
+    "signature": "Vector CBaseEntity::EyePosition()",
+    "description": "Get vector to eye position - absolute coords",
+    "description_zh": "获取指向眼睛位置的向量 - 绝对坐标"
+  },
+  {
+    "function": "CBaseEntity::FirstMoveChild",
+    "signature": "handle CBaseEntity::FirstMoveChild()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetAbsAngles",
+    "signature": "QAngle CBaseEntity::GetAbsAngles()",
+    "description": "Get entity pitch, yaw, roll as a QAngle",
+    "description_zh": "获取实体的俯仰角、偏航角、翻滚角作为 QAngle"
+  },
+  {
+    "function": "CBaseEntity::GetAbsOrigin",
+    "signature": "Vector CBaseEntity::GetAbsOrigin()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetAbsVelocity",
+    "signature": "Vector CBaseEntity::GetAbsVelocity()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetAngularVelocity",
+    "signature": "QAngle CBaseEntity::GetAngularVelocity()",
+    "description": "Get the local angular velocity - returns a vector of pitch,yaw,roll",
+    "description_zh": "获取本地角速度 - 返回一个包含俯仰、偏航、翻滚的向量"
+  },
+  {
+    "function": "CBaseEntity::GetBaseVelocity",
+    "signature": "Vector CBaseEntity::GetBaseVelocity()",
+    "description": "Returns any constant velocity currently being imparted onto the entity. This includes being pushed by effects like trigger_push and players standing on moving geometry like elevators. Should always returns a zero vector if the entity is not affected by any movement effects.",
+    "description_zh": "返回当前施加于该实体的恒定速度。这包括由类似 trigger_push 这样的效果所推动，以及玩家站在电梯等移动几何体上的情形。如果该实体未受到任何运动效果的影响，应始终返回零向量。"
+  },
+  {
+    "function": "CBaseEntity::GetBoundingMaxs",
+    "signature": "Vector CBaseEntity::GetBoundingMaxs()",
+    "description": "Get a vector containing max bounds, centered on object",
+    "description_zh": "获取一个包含最大边界值的向量，该向量以物体为中心"
+  },
+  {
+    "function": "CBaseEntity::GetBoundingMaxsOriented",
+    "signature": "Vector CBaseEntity::GetBoundingMaxsOriented()",
+    "description": "Get a vector containing max bounds, centered on object, taking the object's orientation into account",
+    "description_zh": "获取一个包含最大边界值的向量，该向量以物体为中心，并考虑物体的方向。"
+  },
+  {
+    "function": "CBaseEntity::GetBoundingMins",
+    "signature": "Vector CBaseEntity::GetBoundingMins()",
+    "description": "Get a vector containing min bounds, centered on object",
+    "description_zh": "获取一个包含最小边界值的向量，该向量以物体为中心"
+  },
+  {
+    "function": "CBaseEntity::GetBoundingMinsOriented",
+    "signature": "Vector CBaseEntity::GetBoundingMinsOriented()",
+    "description": "Get a vector containing min bounds, centered on object, taking the object's orientation into account",
+    "description_zh": "获取一个向量，该向量包含最小边界，以物体为中心，并考虑物体的方向。"
+  },
+  {
+    "function": "CBaseEntity::GetCenter",
+    "signature": "Vector CBaseEntity::GetCenter()",
+    "description": "Get vector to center of object - absolute coords",
+    "description_zh": "获取指向物体中心的向量 - 绝对坐标"
+  },
+  {
+    "function": "CBaseEntity::GetClassname",
+    "signature": "string CBaseEntity::GetClassname()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetCollisionGroup",
+    "signature": "int CBaseEntity::GetCollisionGroup()",
+    "description": "Gets the current collision group of the entity.",
+    "description_zh": "获取实体当前的碰撞组。"
+  },
+  {
+    "function": "CBaseEntity::GetEFlags",
+    "signature": "int CBaseEntity::GetEFlags()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetEntityHandle",
+    "signature": "<unknown> CBaseEntity::GetEntityHandle()",
+    "description": "Get the entity as an EHANDLE",
+    "description_zh": "以 EHANDLE 的形式获取实体"
+  },
+  {
+    "function": "CBaseEntity::GetFlags",
+    "signature": "int CBaseEntity::GetFlags()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetForwardVector",
+    "signature": "Vector CBaseEntity::GetForwardVector()",
+    "description": "Get the forward vector of the entity",
+    "description_zh": "获取实体的前向向量"
+  },
+  {
+    "function": "CBaseEntity::GetFriction",
+    "signature": "float CBaseEntity::GetFriction()",
+    "description": "Get PLAYER friction, ignored for objects",
+    "description_zh": "获取玩家摩擦力，对物体忽略"
+  },
+  {
+    "function": "CBaseEntity::GetGravity",
+    "signature": "float CBaseEntity::GetGravity()",
+    "description": "Get PLAYER gravity, ignored for objects",
+    "description_zh": "获取玩家的重力，对物体无效"
+  },
+  {
+    "function": "CBaseEntity::GetHealth",
+    "signature": "int CBaseEntity::GetHealth()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetLocalAngles",
+    "signature": "QAngle CBaseEntity::GetLocalAngles()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetLocalOrigin",
+    "signature": "Vector CBaseEntity::GetLocalOrigin()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetLocalVelocity",
+    "signature": "Vector CBaseEntity::GetLocalVelocity()",
+    "description": "Get Entity relative velocity",
+    "description_zh": "获取实体相对速度"
+  },
+  {
+    "function": "CBaseEntity::GetMaxHealth",
+    "signature": "int CBaseEntity::GetMaxHealth()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetModelKeyValues",
+    "signature": "handle CBaseEntity::GetModelKeyValues()",
+    "description": "Get a KeyValue class instance on this entity's model",
+    "description_zh": "获取此实体模型的 KeyValue 类实例"
+  },
+  {
+    "function": "CBaseEntity::GetModelName",
+    "signature": "string CBaseEntity::GetModelName()",
+    "description": "Returns the name of the model",
+    "description_zh": "返回模型的名称"
+  },
+  {
+    "function": "CBaseEntity::GetMoveParent",
+    "signature": "handle CBaseEntity::GetMoveParent()",
+    "description": "If in hierarchy, retrieves the entity's parent",
+    "description_zh": "如果存在层级关系，则检索实体的父级"
+  },
+  {
+    "function": "CBaseEntity::GetMoveType",
+    "signature": "int CBaseEntity::GetMoveType()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetName",
+    "signature": "string CBaseEntity::GetName()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetOwner",
+    "signature": "handle CBaseEntity::GetOwner()",
+    "description": "Gets this entity's owner",
+    "description_zh": "获取此实体的所有者"
+  },
+  {
+    "function": "CBaseEntity::GetPhysAngularVelocity",
+    "signature": "Vector CBaseEntity::GetPhysAngularVelocity()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetPhysVelocity",
+    "signature": "Vector CBaseEntity::GetPhysVelocity()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetPreTemplateName",
+    "signature": "string CBaseEntity::GetPreTemplateName()",
+    "description": "Get the entity name stripped of template unique decoration",
+    "description_zh": "去除模板唯一装饰后的实体名称"
+  },
+  {
+    "function": "CBaseEntity::GetRenderColorA",
+    "signature": "int CBaseEntity::GetRenderColorA()",
+    "description": "Get the color of the entity.",
+    "description_zh": "获取实体的颜色。"
+  },
+  {
+    "function": "CBaseEntity::GetRenderColorB",
+    "signature": "int CBaseEntity::GetRenderColorB()",
+    "description": "Get the color of the entity.",
+    "description_zh": "获取实体的颜色。"
+  },
+  {
+    "function": "CBaseEntity::GetRenderColorG",
+    "signature": "int CBaseEntity::GetRenderColorG()",
+    "description": "Get the color of the entity.",
+    "description_zh": "获取实体的颜色。"
+  },
+  {
+    "function": "CBaseEntity::GetRenderColorR",
+    "signature": "int CBaseEntity::GetRenderColorR()",
+    "description": "Get the color of the entity.",
+    "description_zh": "获取实体的颜色。"
+  },
+  {
+    "function": "CBaseEntity::GetRenderMode",
+    "signature": "int CBaseEntity::GetRenderMode()",
+    "description": "Get render mode of the entity. See Constants.ERenderMode for more info.",
+    "description_zh": "获取实体的渲染模式。有关更多信息，请参见 Constants.ERenderMode。"
+  },
+  {
+    "function": "CBaseEntity::GetRightVector",
+    "signature": "Vector CBaseEntity::GetRightVector()",
+    "description": "Get the right vector of the entity",
+    "description_zh": "获取实体的正确方向向量"
+  },
+  {
+    "function": "CBaseEntity::GetRootMoveParent",
+    "signature": "handle CBaseEntity::GetRootMoveParent()",
+    "description": "If in hierarchy, walks up the hierarchy to find the root parent",
+    "description_zh": "如果在层级中，会向上遍历层级以找到根父级"
+  },
+  {
+    "function": "CBaseEntity::GetScriptId",
+    "signature": "string CBaseEntity::GetScriptId()",
+    "description": "Retrieve the unique identifier used to refer to the entity within the scripting system",
+    "description_zh": "检索脚本系统中用于引用该实体的唯一标识符"
+  },
+  {
+    "function": "CBaseEntity::GetScriptScope",
+    "signature": "handle CBaseEntity::GetScriptScope()",
+    "description": "Retrieve the script-side data associated with an entity",
+    "description_zh": "检索与实体相关联的脚本端数据"
+  },
+  {
+    "function": "CBaseEntity::GetScriptThinkFunc",
+    "signature": "string CBaseEntity::GetScriptThinkFunc()",
+    "description": "Retrieve the name of the current script think func",
+    "description_zh": "获取当前脚本的名称 think func"
+  },
+  {
+    "function": "CBaseEntity::GetSolid",
+    "signature": "int CBaseEntity::GetSolid()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetSoundDuration",
+    "signature": "float CBaseEntity::GetSoundDuration(string, string)",
+    "description": "Returns float duration of the sound. Takes soundname and optional actormodelname.",
+    "description_zh": "返回声音的持续时间（浮点数）。需要声音名称和可选的角色模型名称。"
+  },
+  {
+    "function": "CBaseEntity::GetTeam",
+    "signature": "int CBaseEntity::GetTeam()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::GetUpVector",
+    "signature": "Vector CBaseEntity::GetUpVector()",
+    "description": "Get the up vector of the entity",
+    "description_zh": "获取实体的上方向向量"
+  },
+  {
+    "function": "CBaseEntity::GetWaterLevel",
+    "signature": "int CBaseEntity::GetWaterLevel()",
+    "description": "This function tells you how much of the entity is underwater. It returns a value of 0 if not underwater, 1 if the feet are (touching water brush), 2 if the waist is (center of the hull of the entity), and 3 if the head is (eyes position).",
+    "description_zh": "此函数可告诉您实体有多少部分处于水下。如果实体未浸入水中，返回值为0；如果脚部（接触水刷）浸入水中，返回值为1；如果腰部（实体船体的中心）浸入水中，返回值为2；如果头部（眼睛位置）浸入水中，返回值为3。"
+  },
+  {
+    "function": "CBaseEntity::GetWaterType",
+    "signature": "int CBaseEntity::GetWaterType()",
+    "description": "It returns the type of water the entity is currently submerged in. 32 for water and 16 for slime.",
+    "description_zh": "它返回实体当前所处的水的类型。32 表示水，16 表示黏液。"
+  },
+  {
+    "function": "CBaseEntity::IsAlive",
+    "signature": "bool CBaseEntity::IsAlive()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::IsEFlagSet",
+    "signature": "bool CBaseEntity::IsEFlagSet(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::IsPlayer",
+    "signature": "bool CBaseEntity::IsPlayer()",
+    "description": "Checks whether the entity is a player or not.",
+    "description_zh": "检查该实体是否为玩家。"
+  },
+  {
+    "function": "CBaseEntity::IsSolid",
+    "signature": "bool CBaseEntity::IsSolid()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::IsSolidFlagSet",
+    "signature": "bool CBaseEntity::IsSolidFlagSet(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::KeyValueFromFloat",
+    "signature": "bool CBaseEntity::KeyValueFromFloat(string, float)",
+    "description": "Executes KeyValue with a float",
+    "description_zh": "以浮点数执行 KeyValue"
+  },
+  {
+    "function": "CBaseEntity::KeyValueFromInt",
+    "signature": "bool CBaseEntity::KeyValueFromInt(string, int)",
+    "description": "Executes KeyValue with an int",
+    "description_zh": "以整数执行 KeyValue"
+  },
+  {
+    "function": "CBaseEntity::KeyValueFromString",
+    "signature": "bool CBaseEntity::KeyValueFromString(string, string)",
+    "description": "Executes KeyValue with a string",
+    "description_zh": "以字符串执行键值对"
+  },
+  {
+    "function": "CBaseEntity::KeyValueFromVector",
+    "signature": "bool CBaseEntity::KeyValueFromVector(string, Vector)",
+    "description": "Executes KeyValue with a vector",
+    "description_zh": "执行带有向量的KeyValue"
+  },
+  {
+    "function": "CBaseEntity::Kill",
+    "signature": "void CBaseEntity::Kill()",
+    "description": "Removes the entity. Equivalent of firing the Kill I/O input, but instantaneous.",
+    "description_zh": "移除该实体。相当于触发“Kill I/O”输入，但为即时执行。"
+  },
+  {
+    "function": "CBaseEntity::LocalEyeAngles",
+    "signature": "QAngle CBaseEntity::LocalEyeAngles()",
+    "description": "Returns the entity's local eye angles",
+    "description_zh": "返回实体的本地视线角度"
+  },
+  {
+    "function": "CBaseEntity::NextMovePeer",
+    "signature": "handle CBaseEntity::NextMovePeer()",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::PrecacheModel",
+    "signature": "void CBaseEntity::PrecacheModel(string)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::PrecacheScriptSound",
+    "signature": "void CBaseEntity::PrecacheScriptSound(string)",
+    "description": "Precache a sound for later playing.",
+    "description_zh": "预先缓存一段声音以便之后播放。"
+  },
+  {
+    "function": "CBaseEntity::RemoveEFlags",
+    "signature": "void CBaseEntity::RemoveEFlags(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::RemoveFlag",
+    "signature": "void CBaseEntity::RemoveFlag(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::RemoveSolidFlags",
+    "signature": "void CBaseEntity::RemoveSolidFlags(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetAbsAngles",
+    "signature": "void CBaseEntity::SetAbsAngles(QAngle)",
+    "description": "Set entity pitch, yaw, roll",
+    "description_zh": "设置实体俯仰角、偏航角、翻滚角"
+  },
+  {
+    "function": "CBaseEntity::SetAbsOrigin",
+    "signature": "void CBaseEntity::SetAbsOrigin(Vector)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetAbsVelocity",
+    "signature": "void CBaseEntity::SetAbsVelocity(Vector)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetAngularVelocity",
+    "signature": "void CBaseEntity::SetAngularVelocity(QAngle)",
+    "description": "Set the local angular velocity - takes float pitch,yaw,roll velocities",
+    "description_zh": "设置本地角速度 - 接受浮点型的俯仰、偏航、滚转速度"
+  },
+  {
+    "function": "CBaseEntity::SetCollisionGroup",
+    "signature": "void CBaseEntity::SetCollisionGroup(int)",
+    "description": "Set the current collision group of the entity.",
+    "description_zh": "设置实体当前的碰撞组。"
+  },
+  {
+    "function": "CBaseEntity::SetDrawEnabled",
+    "signature": "void CBaseEntity::SetDrawEnabled(bool)",
+    "description": "Enables drawing if you pass true, disables drawing if you pass false.",
+    "description_zh": "如果传入 true，则启用绘制；如果传入 false，则禁用绘制。"
+  },
+  {
+    "function": "CBaseEntity::SetEFlags",
+    "signature": "void CBaseEntity::SetEFlags(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetForwardVector",
+    "signature": "void CBaseEntity::SetForwardVector(Vector)",
+    "description": "Set the orientation of the entity to have this forward vector",
+    "description_zh": "将实体的方向设置为使此方向向量成为前向向量"
+  },
+  {
+    "function": "CBaseEntity::SetFriction",
+    "signature": "void CBaseEntity::SetFriction(float)",
+    "description": "Set PLAYER friction, ignored for objects",
+    "description_zh": "设置玩家的摩擦力，对物体无效"
+  },
+  {
+    "function": "CBaseEntity::SetGravity",
+    "signature": "void CBaseEntity::SetGravity(float)",
+    "description": "Set PLAYER gravity, ignored for objects",
+    "description_zh": "设置玩家重力，对物体无效"
+  },
+  {
+    "function": "CBaseEntity::SetHealth",
+    "signature": "void CBaseEntity::SetHealth(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetLocalAngles",
+    "signature": "void CBaseEntity::SetLocalAngles(QAngle)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetLocalOrigin",
+    "signature": "void CBaseEntity::SetLocalOrigin(Vector)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetMaxHealth",
+    "signature": "void CBaseEntity::SetMaxHealth(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetModel",
+    "signature": "void CBaseEntity::SetModel(string)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetMoveType",
+    "signature": "void CBaseEntity::SetMoveType(int, int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetOwner",
+    "signature": "void CBaseEntity::SetOwner(handle)",
+    "description": "Sets this entity's owner",
+    "description_zh": "设置此实体的所有者"
+  },
+  {
+    "function": "CBaseEntity::SetPhysAngularVelocity",
+    "signature": "void CBaseEntity::SetPhysAngularVelocity(Vector)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetPhysVelocity",
+    "signature": "void CBaseEntity::SetPhysVelocity(Vector)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetRenderColor",
+    "signature": "void CBaseEntity::SetRenderColor(int, int, int, int)",
+    "description": "Changes the color of the entity.",
+    "description_zh": "更改实体的颜色。"
+  },
+  {
+    "function": "CBaseEntity::SetRenderMode",
+    "signature": "void CBaseEntity::SetRenderMode(int)",
+    "description": "Changes the render mode of the entity. See Constants.ERenderMode for more info.",
+    "description_zh": "更改实体的渲染模式。有关更多信息，请参见 Constants.ERenderMode。"
+  },
+  {
+    "function": "CBaseEntity::SetSize",
+    "signature": "void CBaseEntity::SetSize(Vector, Vector)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetSolid",
+    "signature": "void CBaseEntity::SetSolid(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetSolidFlags",
+    "signature": "void CBaseEntity::SetSolidFlags(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetTeam",
+    "signature": "void CBaseEntity::SetTeam(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetWaterLevel",
+    "signature": "void CBaseEntity::SetWaterLevel(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::SetWaterType",
+    "signature": "void CBaseEntity::SetWaterType(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::StopSound",
+    "signature": "void CBaseEntity::StopSound(string)",
+    "description": "Stops a sound on this entity.",
+    "description_zh": "停止此实体上的声音。"
+  },
+  {
+    "function": "CBaseEntity::TakeDamage",
+    "signature": "void CBaseEntity::TakeDamage(float, int, handle)",
+    "description": "Deals damage to the entity.",
+    "description_zh": "对目标造成伤害。"
+  },
+  {
+    "function": "CBaseEntity::TakeDamageEx",
+    "signature": "void CBaseEntity::TakeDamageEx(handle, handle, handle, Vector, Vector, float, int)",
+    "description": "Extended version of TakeDamage.",
+    "description_zh": "TakeDamage 的扩展版本。"
+  },
+  {
+    "function": "CBaseEntity::Teleport",
+    "signature": "void CBaseEntity::Teleport(bool, Vector, bool, QAngle, bool, Vector)",
+    "description": "Teleports this entity",
+    "description_zh": "将此实体传送出去"
+  },
+  {
+    "function": "CBaseEntity::TerminateScriptScope",
+    "signature": "void CBaseEntity::TerminateScriptScope()",
+    "description": "Clear the current script scope for this entity",
+    "description_zh": "清除此实体的当前脚本作用域"
+  },
+  {
+    "function": "CBaseEntity::ToggleFlag",
+    "signature": "void CBaseEntity::ToggleFlag(int)",
+    "description": ""
+  },
+  {
+    "function": "CBaseEntity::ValidateScriptScope",
+    "signature": "bool CBaseEntity::ValidateScriptScope()",
+    "description": "Ensure that an entity's script scope has been created",
+    "description_zh": "确保已创建实体的脚本作用域"
+  },
+  {
+    "function": "CBaseEntity::entindex",
+    "signature": "int CBaseEntity::entindex()",
+    "description": ""
+  },
+  {
+    "function": "CBaseFlex::GetCurrentScene",
+    "signature": "handle CBaseFlex::GetCurrentScene()",
+    "description": "Returns the instance of the oldest active scene entity (if any).",
+    "description_zh": "返回最旧的活动场景实体的实例（如果有的话）。"
+  },
+  {
+    "function": "CBaseFlex::GetSceneByIndex",
+    "signature": "handle CBaseFlex::GetSceneByIndex(int)",
+    "description": "Returns the instance of the scene entity at the specified index.",
+    "description_zh": "返回指定索引处的场景实体实例。"
+  },
+  {
+    "function": "CBaseFlex::PlayScene",
+    "signature": "float CBaseFlex::PlayScene(string, float)",
+    "description": "Play the specified .vcd file, causing the related characters to speak and subtitles to play.",
+    "description_zh": "播放指定的 .vcd 文件，使相关角色说话并显示字幕。"
+  },
+  {
+    "function": "CBaseGrenade::Detonate",
+    "signature": "void CBaseGrenade::Detonate()",
+    "description": ""
+  },
+  {
+    "function": "CBaseGrenade::SetThrower",
+    "signature": "void CBaseGrenade::SetThrower(handle)",
+    "description": ""
+  },
+  {
+    "function": "CBasePlayer::ArmorValue",
+    "signature": "int CBasePlayer::ArmorValue()",
+    "description": "Get the amount of armor the player wears.",
+    "description_zh": "获取玩家所穿戴的护甲数量。"
+  },
+  {
+    "function": "CBasePlayer::DisableButtons",
+    "signature": "void CBasePlayer::DisableButtons(int)",
+    "description": "Disables a specified bit mask of buttons from being pressed.",
+    "description_zh": "禁用指定的按钮位掩码，使其无法被按下。"
+  },
+  {
+    "function": "CBasePlayer::EnableButtons",
+    "signature": "void CBasePlayer::EnableButtons(int)",
+    "description": "Enables a specified bit mask of buttons to be pressed.",
+    "description_zh": "启用指定的按钮位掩码。"
+  },
+  {
+    "function": "CBasePlayer::EyeAngles",
+    "signature": "QAngle CBasePlayer::EyeAngles()",
+    "description": "Get the player's eye angles in world space.",
+    "description_zh": "获取玩家的视线角度（以世界空间表示）。"
+  },
+  {
+    "function": "CBasePlayer::EyePosition",
+    "signature": "Vector CBasePlayer::EyePosition()",
+    "description": "Get the player's eye position in world space.",
+    "description_zh": "获取玩家眼睛在世界空间中的位置。"
+  },
+  {
+    "function": "CBasePlayer::ForceButtons",
+    "signature": "void CBasePlayer::ForceButtons(int)",
+    "description": "Forces a specified bit mask of buttons to always be pressed.",
+    "description_zh": "强制指定的按钮位掩码始终处于按下状态。"
+  },
+  {
+    "function": "CBasePlayer::GetButtonsHeld",
+    "signature": "int CBasePlayer::GetButtonsHeld()",
+    "description": "Returns a bit mask of buttons the player is currently holding.",
+    "description_zh": "返回玩家当前按下的按钮的位掩码。"
+  },
+  {
+    "function": "CBasePlayer::GetButtonsPressed",
+    "signature": "int CBasePlayer::GetButtonsPressed()",
+    "description": "Returns a bit mask of buttons the player pressed this frame.",
+    "description_zh": "返回玩家本帧按下的按钮的位掩码。"
+  },
+  {
+    "function": "CBasePlayer::GetButtonsReleased",
+    "signature": "int CBasePlayer::GetButtonsReleased()",
+    "description": "Returns a bit mask of buttons the player released this frame.",
+    "description_zh": "返回玩家在本帧释放的按钮的位掩码。"
+  },
+  {
+    "function": "CBasePlayer::GetForceLocalDraw",
+    "signature": "bool CBasePlayer::GetForceLocalDraw()",
+    "description": "Whether the player is being forced by SetForceLocalDraw to be drawn.",
+    "description_zh": "无论玩家是否被 SetForceLocalDraw 强制绘制。"
+  },
+  {
+    "function": "CBasePlayer::GetPlayerMaxs",
+    "signature": "<unknown> CBasePlayer::GetPlayerMaxs()",
+    "description": "Get a vector containing max bounds of the player in local space. The player's model scale will affect the result.",
+    "description_zh": "获取包含玩家在局部空间中最大边界值的向量。玩家模型的缩放会影响结果。"
+  },
+  {
+    "function": "CBasePlayer::GetPlayerMins",
+    "signature": "<unknown> CBasePlayer::GetPlayerMins()",
+    "description": "Get a vector containing min bounds of the player in local space. The player's model scale will affect the result.",
+    "description_zh": "获取一个包含玩家在局部空间中最小边界的向量。玩家模型的缩放会影响结果。"
+  },
+  {
+    "function": "CBasePlayer::GetScriptOverlayMaterial",
+    "signature": "string CBasePlayer::GetScriptOverlayMaterial()",
+    "description": "Gets the current view overlay material",
+    "description_zh": "获取当前视图覆盖材质"
+  },
+  {
+    "function": "CBasePlayer::IsNoclipping",
+    "signature": "bool CBasePlayer::IsNoclipping()",
+    "description": "Returns true if the player is in noclip mode.",
+    "description_zh": "如果玩家处于无碰撞模式（noclip mode），则返回 true。"
+  },
+  {
+    "function": "CBasePlayer::LocalEyeAngles",
+    "signature": "QAngle CBasePlayer::LocalEyeAngles()",
+    "description": "Get the player's eye angles in local space (relative to parent).",
+    "description_zh": "获取玩家眼睛的局部空间角度（相对于父级）。"
+  },
+  {
+    "function": "CBasePlayer::SetArmorValue",
+    "signature": "void CBasePlayer::SetArmorValue(int)",
+    "description": "Set the amount of armor for this player.",
+    "description_zh": "设置此玩家的护甲值。"
+  },
+  {
+    "function": "CBasePlayer::SetForceLocalDraw",
+    "signature": "void CBasePlayer::SetForceLocalDraw(bool)",
+    "description": "Forces the player to be drawn as if they were in thirdperson.",
+    "description_zh": "强制玩家以第三人称视角绘制。"
+  },
+  {
+    "function": "CBasePlayer::SetScriptOverlayMaterial",
+    "signature": "void CBasePlayer::SetScriptOverlayMaterial(string)",
+    "description": "Sets a view overlay material",
+    "description_zh": "设置视图叠加材质"
+  },
+  {
+    "function": "CBasePlayer::SnapEyeAngles",
+    "signature": "void CBasePlayer::SnapEyeAngles(QAngle)",
+    "description": "Snap the player's eye angles to this.",
+    "description_zh": "将球员的眼部角度与此对齐。"
+  },
+  {
+    "function": "CBasePlayer::UnforceButtons",
+    "signature": "void CBasePlayer::UnforceButtons(int)",
+    "description": "Unforces a specified bit mask of buttons to always be pressed.",
+    "description_zh": "解除对指定按钮位掩码的强制按下状态，使其始终处于按下状态。"
+  },
+  {
+    "function": "CBasePlayer::ViewPunch",
+    "signature": "void CBasePlayer::ViewPunch(QAngle)",
+    "description": "Ow! Punches the player's view.",
+    "description_zh": "哎呀！击中玩家的视角。"
+  },
+  {
+    "function": "CBasePlayer::ViewPunchReset",
+    "signature": "void CBasePlayer::ViewPunchReset(float)",
+    "description": "Reset's the player's view punch if the offset stays below the given tolerance.",
+    "description_zh": "如果偏移量保持在给定的公差范围内，则重置玩家的视角抖动。"
+  },
+  {
+    "function": "CCSHostage::IsBeingCarried",
+    "signature": "bool CCSHostage::IsBeingCarried()",
+    "description": "Get whether the hostage is currently being carried or not",
+    "description_zh": "获取人质当前是否正在被携带的状态。"
+  },
+  {
+    "function": "CCSPlayer::GetAccount",
+    "signature": "int CCSPlayer::GetAccount()",
+    "description": "Gets player money value.",
+    "description_zh": "获取玩家金钱值。"
+  },
+  {
+    "function": "CCSPlayer::HasHelmet",
+    "signature": "bool CCSPlayer::HasHelmet()",
+    "description": "Whether this player has a helmet or not.",
+    "description_zh": "该选手是否戴了头盔。"
+  },
+  {
+    "function": "CCSPlayer::HintMessage",
+    "signature": "void CCSPlayer::HintMessage(string, bool, bool)",
+    "description": "(string message, bool displayIfDead, bool overrideClientSettings) - Display a hint message for this player.",
+    "description_zh": "（字符串消息，布尔值 displayIfDead，布尔值 overrideClientSettings）- 为该玩家显示一个提示消息。"
+  },
+  {
+    "function": "CCSPlayer::InitializeAccount",
+    "signature": "void CCSPlayer::InitializeAccount(int)",
+    "description": "Sets player money value.",
+    "description_zh": "设置玩家资金数值。"
+  },
+  {
+    "function": "CCSPlayer::SetHelmet",
+    "signature": "void CCSPlayer::SetHelmet(bool)",
+    "description": "Toggles helmet for this player.",
+    "description_zh": "切换此球员的头盔。"
+  },
+  {
+    "function": "CEntities::CreateByClassname",
+    "signature": "handle CEntities::CreateByClassname(string)",
+    "description": "Creates an entity by classname",
+    "description_zh": "通过类名创建实体"
+  },
+  {
+    "function": "CEntities::DispatchSpawn",
+    "signature": "void CEntities::DispatchSpawn(handle)",
+    "description": "Dispatches spawn of an entity!",
+    "description_zh": "派遣实体的生成！"
+  },
+  {
+    "function": "CEntities::FindByClassname",
+    "signature": "handle CEntities::FindByClassname(handle, string)",
+    "description": "Find entities by class name. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search",
+    "description_zh": "通过类名查找实体。传入“null”以开始迭代，或引用之前找到的实体以继续搜索"
+  },
+  {
+    "function": "CEntities::FindByClassnameNearest",
+    "signature": "handle CEntities::FindByClassnameNearest(string, Vector, float)",
+    "description": "Find entities by class name nearest to a point.",
+    "description_zh": "通过类名在某一点附近的实体。"
+  },
+  {
+    "function": "CEntities::FindByClassnameWithin",
+    "signature": "handle CEntities::FindByClassnameWithin(handle, string, Vector, float)",
+    "description": "Find entities by class name within a radius. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search",
+    "description_zh": "根据类名在一定半径内查找实体。传入“null”以开始迭代，或引用之前找到的实体以继续搜索"
+  },
+  {
+    "function": "CEntities::FindByModel",
+    "signature": "handle CEntities::FindByModel(handle, string)",
+    "description": "Find entities by model name. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search",
+    "description_zh": "通过模型名称查找实体。传入“null”以开始迭代，或引用之前找到的实体以继续搜索"
+  },
+  {
+    "function": "CEntities::FindByName",
+    "signature": "handle CEntities::FindByName(handle, string)",
+    "description": "Find entities by name. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search",
+    "description_zh": "通过名称查找实体。传入“null”以开始迭代，或引用之前找到的实体以继续搜索"
+  },
+  {
+    "function": "CEntities::FindByNameNearest",
+    "signature": "handle CEntities::FindByNameNearest(string, Vector, float)",
+    "description": "Find entities by name nearest to a point.",
+    "description_zh": "通过名称在某一点附近的实体。"
+  },
+  {
+    "function": "CEntities::FindByNameWithin",
+    "signature": "handle CEntities::FindByNameWithin(handle, string, Vector, float)",
+    "description": "Find entities by name within a radius. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search",
+    "description_zh": "通过名称在一定半径内查找实体。传入“null”以开始迭代，或引用之前找到的实体以继续搜索。"
+  },
+  {
+    "function": "CEntities::FindByTarget",
+    "signature": "handle CEntities::FindByTarget(handle, string)",
+    "description": "Find entities by targetname. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search",
+    "description_zh": "通过目标名称查找实体。传入“null”以开始迭代，或引用之前找到的实体以继续搜索"
+  },
+  {
+    "function": "CEntities::FindInSphere",
+    "signature": "handle CEntities::FindInSphere(handle, Vector, float)",
+    "description": "Find entities within a radius. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search",
+    "description_zh": "在一定半径内查找实体。传入“null”以开始迭代，或引用之前找到的实体以继续搜索"
+  },
+  {
+    "function": "CEntities::First",
+    "signature": "handle CEntities::First()",
+    "description": "Begin an iteration over the list of entities",
+    "description_zh": "对实体列表进行一次迭代"
+  },
+  {
+    "function": "CEntities::Next",
+    "signature": "handle CEntities::Next(handle)",
+    "description": "Continue an iteration over the list of entities, providing reference to a previously found entity",
+    "description_zh": "继续遍历实体列表的迭代，提供对之前找到的实体的引用"
+  },
+  {
+    "function": "CEnvEntityMaker::SpawnEntity",
+    "signature": "void CEnvEntityMaker::SpawnEntity()",
+    "description": "Create an entity at the location of the maker",
+    "description_zh": "在制造者的位置创建一个实体"
+  },
+  {
+    "function": "CEnvEntityMaker::SpawnEntityAtEntityOrigin",
+    "signature": "void CEnvEntityMaker::SpawnEntityAtEntityOrigin(handle)",
+    "description": "Create an entity at the location of a specified entity instance",
+    "description_zh": "在指定实体实例的位置创建一个实体"
+  },
+  {
+    "function": "CEnvEntityMaker::SpawnEntityAtLocation",
+    "signature": "void CEnvEntityMaker::SpawnEntityAtLocation(Vector, Vector)",
+    "description": "Create an entity at a specified location and orientaton, orientation is Euler angle in degrees (pitch, yaw, roll)",
+    "description_zh": "在指定的位置和方向创建一个实体，方向为以度为单位的欧拉角（俯仰角、偏航角、滚转角）。"
+  },
+  {
+    "function": "CEnvEntityMaker::SpawnEntityAtNamedEntityOrigin",
+    "signature": "void CEnvEntityMaker::SpawnEntityAtNamedEntityOrigin(string)",
+    "description": "Create an entity at the location of a named entity",
+    "description_zh": "在命名实体的位置创建一个实体"
+  },
+  {
+    "function": "CFuncTrackTrain::GetFuturePosition",
+    "signature": "Vector CFuncTrackTrain::GetFuturePosition(float, float)",
+    "description": "Get a position on the track x seconds in the future",
+    "description_zh": "获取x秒后在轨道上的位置"
+  },
+  {
+    "function": "CNetPropManager::GetPropArraySize",
+    "signature": "int CNetPropManager::GetPropArraySize(handle, string)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetPropBool",
+    "signature": "bool CNetPropManager::GetPropBool(handle, string)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetPropBoolArray",
+    "signature": "bool CNetPropManager::GetPropBoolArray(handle, string, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetPropEntity",
+    "signature": "handle CNetPropManager::GetPropEntity(handle, string)",
+    "description": "Returns an entity",
+    "description_zh": "返回一个实体"
+  },
+  {
+    "function": "CNetPropManager::GetPropEntityArray",
+    "signature": "handle CNetPropManager::GetPropEntityArray(handle, string, int)",
+    "description": "Returns an entity",
+    "description_zh": "返回一个实体"
+  },
+  {
+    "function": "CNetPropManager::GetPropFloat",
+    "signature": "float CNetPropManager::GetPropFloat(handle, string)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetPropFloatArray",
+    "signature": "float CNetPropManager::GetPropFloatArray(handle, string, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetPropInfo",
+    "signature": "bool CNetPropManager::GetPropInfo(handle, string, int, handle)",
+    "description": "Fills in a passed table with property info for the provided entity",
+    "description_zh": "用提供的实体的属性信息填充传入的表格"
+  },
+  {
+    "function": "CNetPropManager::GetPropInt",
+    "signature": "int CNetPropManager::GetPropInt(handle, string)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetPropIntArray",
+    "signature": "int CNetPropManager::GetPropIntArray(handle, string, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetPropString",
+    "signature": "string CNetPropManager::GetPropString(handle, string)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetPropStringArray",
+    "signature": "string CNetPropManager::GetPropStringArray(handle, string, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetPropType",
+    "signature": "string CNetPropManager::GetPropType(handle, string)",
+    "description": "Return the prop type as a string",
+    "description_zh": "以字符串形式返回属性类型"
+  },
+  {
+    "function": "CNetPropManager::GetPropVector",
+    "signature": "Vector CNetPropManager::GetPropVector(handle, string)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetPropVectorArray",
+    "signature": "Vector CNetPropManager::GetPropVectorArray(handle, string, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::GetTable",
+    "signature": "void CNetPropManager::GetTable(handle, int, handle)",
+    "description": "Fills in a passed table with all props of a specified type for the provided entity (set iPropType to 0 for SendTable or 1 for DataMap)",
+    "description_zh": "用指定类型的全部属性填充传入的表格，用于提供的实体（将iPropType设为0表示SendTable，设为1表示DataMap）"
+  },
+  {
+    "function": "CNetPropManager::HasProp",
+    "signature": "bool CNetPropManager::HasProp(handle, string)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropBool",
+    "signature": "void CNetPropManager::SetPropBool(handle, string, bool)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropBoolArray",
+    "signature": "void CNetPropManager::SetPropBoolArray(handle, string, bool, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropEntity",
+    "signature": "void CNetPropManager::SetPropEntity(handle, string, handle)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropEntityArray",
+    "signature": "void CNetPropManager::SetPropEntityArray(handle, string, handle, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropFloat",
+    "signature": "void CNetPropManager::SetPropFloat(handle, string, float)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropFloatArray",
+    "signature": "void CNetPropManager::SetPropFloatArray(handle, string, float, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropInt",
+    "signature": "void CNetPropManager::SetPropInt(handle, string, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropIntArray",
+    "signature": "void CNetPropManager::SetPropIntArray(handle, string, int, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropString",
+    "signature": "void CNetPropManager::SetPropString(handle, string, string)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropStringArray",
+    "signature": "void CNetPropManager::SetPropStringArray(handle, string, string, int)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropVector",
+    "signature": "void CNetPropManager::SetPropVector(handle, string, Vector)",
+    "description": ""
+  },
+  {
+    "function": "CNetPropManager::SetPropVectorArray",
+    "signature": "void CNetPropManager::SetPropVectorArray(handle, string, Vector, int)",
+    "description": ""
+  },
+  {
+    "function": "CPointScriptTemplate::AddTemplate",
+    "signature": "void CPointScriptTemplate::AddTemplate(string, handle)",
+    "description": "Add an entity to the template spawner",
+    "description_zh": "将实体添加到模板生成器中"
+  },
+  {
+    "function": "CPointScriptTemplate::SetGroupSpawnTables",
+    "signature": "void CPointScriptTemplate::SetGroupSpawnTables(handle, handle)",
+    "description": "Cache the group spawn tables",
+    "description_zh": "缓存组生成表"
+  },
+  {
+    "function": "CSceneEntity::AddBroadcastTeamTarget",
+    "signature": "void CSceneEntity::AddBroadcastTeamTarget(int)",
+    "description": "Adds a team (by index) to the broadcast list",
+    "description_zh": "将一个团队（通过索引）添加到广播列表中"
+  },
+  {
+    "function": "CSceneEntity::EstimateLength",
+    "signature": "float CSceneEntity::EstimateLength()",
+    "description": "Returns length of this scene in seconds.",
+    "description_zh": "返回此场景的时长（以秒为单位）。"
+  },
+  {
+    "function": "CSceneEntity::FindNamedEntity",
+    "signature": "handle CSceneEntity::FindNamedEntity(string)",
+    "description": "given an entity reference, such as !target, get actual entity from scene object",
+    "description_zh": "给定一个实体引用，例如 !target，从场景对象中获取实际的实体。"
+  },
+  {
+    "function": "CSceneEntity::IsPaused",
+    "signature": "bool CSceneEntity::IsPaused()",
+    "description": "If this scene is currently paused.",
+    "description_zh": "如果当前场景已暂停。"
+  },
+  {
+    "function": "CSceneEntity::IsPlayingBack",
+    "signature": "bool CSceneEntity::IsPlayingBack()",
+    "description": "If this scene is currently playing.",
+    "description_zh": "如果当前正在播放此场景。"
+  },
+  {
+    "function": "CSceneEntity::LoadSceneFromString",
+    "signature": "bool CSceneEntity::LoadSceneFromString(string, string)",
+    "description": "given a dummy scene name and a vcd string, load the scene",
+    "description_zh": "给定一个虚拟场景名称和一个VCD字符串，加载该场景"
+  },
+  {
+    "function": "CSceneEntity::RemoveBroadcastTeamTarget",
+    "signature": "void CSceneEntity::RemoveBroadcastTeamTarget(int)",
+    "description": "Removes a team (by index) from the broadcast list",
+    "description_zh": "从广播列表中移除一个队伍（通过索引）"
+  },
+  {
+    "function": "CScriptEntityOutputs::AddOutput",
+    "signature": "void CScriptEntityOutputs::AddOutput(handle, string, string, string, string, float, int)",
+    "description": "Add a new output to the entity",
+    "description_zh": "向实体添加一个新的输出"
+  },
+  {
+    "function": "CScriptEntityOutputs::GetNumElements",
+    "signature": "int CScriptEntityOutputs::GetNumElements(handle, string)",
+    "description": "Returns the number of array elements",
+    "description_zh": "返回数组元素的数量"
+  },
+  {
+    "function": "CScriptEntityOutputs::GetOutputTable",
+    "signature": "void CScriptEntityOutputs::GetOutputTable(handle, string, handle, int)",
+    "description": "Returns a table of output information",
+    "description_zh": "返回输出信息的表格"
+  },
+  {
+    "function": "CScriptEntityOutputs::HasAction",
+    "signature": "bool CScriptEntityOutputs::HasAction(handle, string)",
+    "description": "Returns true if an action exists for the output",
+    "description_zh": "如果输出存在对应的操作，则返回 true"
+  },
+  {
+    "function": "CScriptEntityOutputs::HasOutput",
+    "signature": "bool CScriptEntityOutputs::HasOutput(handle, string)",
+    "description": "Returns true if the output exists",
+    "description_zh": "如果输出存在，则返回 true"
+  },
+  {
+    "function": "CScriptEntityOutputs::RemoveOutput",
+    "signature": "void CScriptEntityOutputs::RemoveOutput(handle, string, string, string, string)",
+    "description": "Remove an output from the entity",
+    "description_zh": "从实体中移除一个输出"
+  },
+  {
+    "function": "CScriptKeyValues::FindKey",
+    "signature": "handle CScriptKeyValues::FindKey(string)",
+    "description": "Given a KeyValues object and a key name, find a KeyValues object associated with the key name",
+    "description_zh": "给定一个 KeyValues 对象和一个键名，查找与该键名相关联的 KeyValues 对象。"
+  },
+  {
+    "function": "CScriptKeyValues::GetFirstSubKey",
+    "signature": "handle CScriptKeyValues::GetFirstSubKey()",
+    "description": "Given a KeyValues object, return the first sub key object",
+    "description_zh": "给定一个 KeyValues 对象，返回第一个子键对象"
+  },
+  {
+    "function": "CScriptKeyValues::GetKeyBool",
+    "signature": "bool CScriptKeyValues::GetKeyBool(string)",
+    "description": "Given a KeyValues object and a key name, return associated bool value",
+    "description_zh": "给定一个 KeyValues 对象和一个键名，返回对应的布尔值。"
+  },
+  {
+    "function": "CScriptKeyValues::GetKeyFloat",
+    "signature": "float CScriptKeyValues::GetKeyFloat(string)",
+    "description": "Given a KeyValues object and a key name, return associated float value",
+    "description_zh": "给定一个 KeyValues 对象和一个键名，返回对应的浮点数值"
+  },
+  {
+    "function": "CScriptKeyValues::GetKeyInt",
+    "signature": "int CScriptKeyValues::GetKeyInt(string)",
+    "description": "Given a KeyValues object and a key name, return associated integer value",
+    "description_zh": "给定一个KeyValues对象和一个键名，返回对应的整数值"
+  },
+  {
+    "function": "CScriptKeyValues::GetKeyString",
+    "signature": "string CScriptKeyValues::GetKeyString(string)",
+    "description": "Given a KeyValues object and a key name, return associated string value",
+    "description_zh": "给定一个 KeyValues 对象和一个键名，返回对应的字符串值"
+  },
+  {
+    "function": "CScriptKeyValues::GetNextKey",
+    "signature": "handle CScriptKeyValues::GetNextKey()",
+    "description": "Given a KeyValues object, return the next key object in a sub key group",
+    "description_zh": "给定一个 KeyValues 对象，返回子键组中的下一个键对象。"
+  },
+  {
+    "function": "CScriptKeyValues::IsKeyEmpty",
+    "signature": "bool CScriptKeyValues::IsKeyEmpty(string)",
+    "description": "Given a KeyValues object and a key name, return true if key name has no value",
+    "description_zh": "给定一个 KeyValues 对象和一个键名，如果该键名没有对应的值，则返回 true。"
+  },
+  {
+    "function": "CScriptKeyValues::ReleaseKeyValues",
+    "signature": "void CScriptKeyValues::ReleaseKeyValues()",
+    "description": "Given a root KeyValues object, release its contents",
+    "description_zh": "给定一个根 KeyValues 对象，释放其内容"
+  },
+  {
+    "function": "CTriggerCamera::GetFov",
+    "signature": "int CTriggerCamera::GetFov()",
+    "description": "get camera's current fov setting as integer",
+    "description_zh": "以整数形式获取相机当前的视场角（FOV）设置"
+  },
+  {
+    "function": "CTriggerCamera::SetFov",
+    "signature": "void CTriggerCamera::SetFov(int, float)",
+    "description": "set camera's current fov in integer degrees and fov change rate as float",
+    "description_zh": "将相机的当前视场角（FOV）设置为整数度数，并将视场角变化率设置为浮点数。"
+  },
+  {
+    "function": "CWeaponCSBase::GetExtraAmmoCount",
+    "signature": "int CWeaponCSBase::GetExtraAmmoCount()",
+    "description": "Returns the amount of reserve ammo this weapon will give to player when picked up",
+    "description_zh": "当玩家拾取该武器时，返回该武器将给予玩家的备用弹药数量。"
+  },
+  {
+    "function": "CWeaponCSBase::GetInaccuracy",
+    "signature": "float CWeaponCSBase::GetInaccuracy()",
+    "description": ""
+  },
+  {
+    "function": "CWeaponCSBase::GetRecoveryTime",
+    "signature": "float CWeaponCSBase::GetRecoveryTime()",
+    "description": ""
+  },
+  {
+    "function": "CWeaponCSBase::GetSpread",
+    "signature": "float CWeaponCSBase::GetSpread()",
+    "description": ""
+  },
+  {
+    "function": "CWeaponCSBase::GetWeaponID",
+    "signature": "int CWeaponCSBase::GetWeaponID()",
+    "description": "Returns weapon ID for this class",
+    "description_zh": "返回此类的武器ID"
+  },
+  {
+    "function": "CWeaponCSBase::GetWeaponMode",
+    "signature": "int CWeaponCSBase::GetWeaponMode()",
+    "description": "Returns whether this weapon is in primary (0) or secondary (1) mode; secondary mode is burst fire, ironsight, scope, etc",
+    "description_zh": "返回此武器是处于主要模式（0）还是次要模式（1）；次要模式包括连发、机械瞄具、瞄准镜等。"
+  },
+  {
+    "function": "CWeaponCSBase::GetZoomLevel",
+    "signature": "int CWeaponCSBase::GetZoomLevel()",
+    "description": ""
+  },
+  {
+    "function": "CWeaponCSBase::IsBurstMode",
+    "signature": "bool CWeaponCSBase::IsBurstMode()",
+    "description": ""
+  },
+  {
+    "function": "CWeaponCSBase::IsFullAuto",
+    "signature": "bool CWeaponCSBase::IsFullAuto()",
+    "description": ""
+  },
+  {
+    "function": "CWeaponCSBase::IsSilenced",
+    "signature": "bool CWeaponCSBase::IsSilenced()",
+    "description": ""
+  },
+  {
+    "function": "CWeaponCSBase::SetExtraAmmoCount",
+    "signature": "void CWeaponCSBase::SetExtraAmmoCount(int)",
+    "description": "Sets the amount of reserve ammo this weapon will give to player when picked up",
+    "description_zh": "设置当玩家拾取该武器时，该武器将给予玩家的备用弹药数量"
+  },
+  {
+    "function": "CWeaponCSBase::SetSilencer",
+    "signature": "void CWeaponCSBase::SetSilencer(bool)",
+    "description": ""
+  },
+  {
+    "function": "ClientPrint",
+    "signature": "void ClientPrint(handle, int, string, string, string, string, string)",
+    "description": "Print a client message",
+    "description_zh": "打印客户端消息"
+  },
+  {
+    "function": "ConVars::Create",
+    "signature": "void ConVars::Create(string, string, int, string, bool, float, bool, float)",
+    "description": "Creates a new ConVar and automatically adds it to allowlist.",
+    "description_zh": "创建一个新的 ConVar 并自动将其添加到白名单中。"
+  },
+  {
+    "function": "ConVars::GetBool",
+    "signature": "<unknown> ConVars::GetBool(string)",
+    "description": "Returns the ConVar as a bool. May return null if no such ConVar.",
+    "description_zh": "将 ConVar 返回为布尔值。如果没有对应的 ConVar，可能返回 null。"
+  },
+  {
+    "function": "ConVars::GetClientConVarValue",
+    "signature": "string ConVars::GetClientConVarValue(string, int)",
+    "description": "Returns the ConVar value for the entindex as a string.",
+    "description_zh": "以字符串形式返回指定实体索引（entindex）对应的ConVar值。"
+  },
+  {
+    "function": "ConVars::GetFloat",
+    "signature": "<unknown> ConVars::GetFloat(string)",
+    "description": "Returns the ConVar as a float. May return null if no such ConVar.",
+    "description_zh": "将 ConVar 返回为浮点数。如果没有对应的 ConVar，可能返回 null。"
+  },
+  {
+    "function": "ConVars::GetInt",
+    "signature": "<unknown> ConVars::GetInt(string)",
+    "description": "Returns the ConVar as an int. May return null if no such ConVar.",
+    "description_zh": "将 ConVar 返回为整数。如果不存在相应的 ConVar，可能返回 null。"
+  },
+  {
+    "function": "ConVars::GetStr",
+    "signature": "<unknown> ConVars::GetStr(string)",
+    "description": "Returns the ConVar as a string. May return null if no such ConVar.",
+    "description_zh": "将 ConVar 返回为字符串。如果没有对应的 ConVar，可能会返回 null。"
+  },
+  {
+    "function": "ConVars::IsConVarOnAllowList",
+    "signature": "bool ConVars::IsConVarOnAllowList(string)",
+    "description": "Checks if the ConVar is allowed to be used and is in cfg/vscript_convar_allowlist.txt. Please be nice with this and use it for *compatibility* if you need check support and NOT to force server owners to allow hostname to be set... or else this will simply lie and return true in future. ;-) You have been warned!",
+    "description_zh": "检查该 ConVar 是否被允许使用，并且是否存在于 cfg/vscript_convar_allowlist.txt 文件中。请谨慎使用此功能，仅在需要*兼容性*支持时使用，而不是用来强制服务器管理员允许设置主机名……否则，将来它可能会直接撒谎并返回 true。 ;-) 你已被警告！"
+  },
+  {
+    "function": "ConVars::SetValue",
+    "signature": "void ConVars::SetValue(string, <unknown>)",
+    "description": "Sets the value of the ConVar. The ConVar must be in cfg/vscript_convar_allowlist.txt to be set. Supported types are bool, int, float, string.",
+    "description_zh": "设置ConVar的值。该ConVar必须在cfg/vscript_convar_allowlist.txt文件中才可被设置。支持的类型包括布尔型、整型、浮点型和字符串型。"
+  },
+  {
+    "function": "CreateProp",
+    "signature": "handle CreateProp(string, Vector, string, int)",
+    "description": "Create a physics prop",
+    "description_zh": "创建一个物理道具"
+  },
+  {
+    "function": "CreateSceneEntity",
+    "signature": "handle CreateSceneEntity(string)",
+    "description": "Create a scene entity to play the specified scene.",
+    "description_zh": "创建一个场景实体以播放指定的场景。"
+  },
+  {
+    "function": "DebugDrawBox",
+    "signature": "void DebugDrawBox(Vector, Vector, Vector, int, int, int, int, float)",
+    "description": "Draw a debug overlay box",
+    "description_zh": "绘制调试覆盖框"
+  },
+  {
+    "function": "DebugDrawBoxAngles",
+    "signature": "void DebugDrawBoxAngles(Vector, Vector, Vector, QAngle, Vector, float, float)",
+    "description": "Draw a debug oriented box (cent, min, max, angles(p,y,r), vRgb, a, duration)",
+    "description_zh": "绘制一个面向调试的框（中心点，最小值，最大值，角度（俯仰、偏航、翻滚），颜色，透明度，持续时间）"
+  },
+  {
+    "function": "DebugDrawBoxDirection",
+    "signature": "void DebugDrawBoxDirection(Vector, Vector, Vector, Vector, Vector, float, float)",
+    "description": "Draw a debug forward box (cent, min, max, forward, vRgb, a, duration)",
+    "description_zh": "绘制一个调试前向框（中心点、最小值、最大值、前向、vRgb、a、持续时间）"
+  },
+  {
+    "function": "DebugDrawCircle",
+    "signature": "void DebugDrawCircle(Vector, Vector, float, float, bool, float)",
+    "description": "Draw a debug circle (center, rad, vRgb, a, ztest, duration)",
+    "description_zh": "绘制一个调试圆圈（中心点，半径，颜色，透明度，深度测试，持续时间）"
+  },
+  {
+    "function": "DebugDrawClear",
+    "signature": "void DebugDrawClear()",
+    "description": "Try to clear all the debug overlay info",
+    "description_zh": "尽量清除所有调试覆盖信息"
+  },
+  {
+    "function": "DebugDrawLine",
+    "signature": "void DebugDrawLine(Vector, Vector, int, int, int, bool, float)",
+    "description": "Draw a debug overlay line",
+    "description_zh": "绘制调试覆盖线"
+  },
+  {
+    "function": "DebugDrawLine_vCol",
+    "signature": "void DebugDrawLine_vCol(Vector, Vector, Vector, bool, float)",
+    "description": "Draw a debug line using color vec (start, end, vRgb, a, ztest, duration)",
+    "description_zh": "使用颜色向量绘制调试线（起点，终点，vRgb，a，ztest，持续时间）"
+  },
+  {
+    "function": "DebugDrawScreenTextLine",
+    "signature": "void DebugDrawScreenTextLine(float, float, int, string, int, int, int, int, float)",
+    "description": "Draw text with a line offset",
+    "description_zh": "以行偏移量绘制文本"
+  },
+  {
+    "function": "DebugDrawText",
+    "signature": "void DebugDrawText(Vector, string, bool, float)",
+    "description": "Draw text in 3d (origin, text, bViewCheck, duration)",
+    "description_zh": "以3D方式绘制文本（原点，文本，bViewCheck，持续时间）"
+  },
+  {
+    "function": "DispatchParticleEffect",
+    "signature": "void DispatchParticleEffect(string, Vector, QAngle)",
+    "description": "Dispatches a one-off particle system",
+    "description_zh": "发送一个一次性粒子系统"
+  },
+  {
+    "function": "DoIncludeScript",
+    "signature": "bool DoIncludeScript(string, handle)",
+    "description": "Execute a script (internal)",
+    "description_zh": "执行脚本（内部）"
+  },
+  {
+    "function": "EmitAmbientSoundOn",
+    "signature": "void EmitAmbientSoundOn(string, float, int, int, handle)",
+    "description": "Play named ambient sound on an entity.",
+    "description_zh": "在实体上播放环境音效。"
+  },
+  {
+    "function": "EmitSoundEx",
+    "signature": "void EmitSoundEx(handle)",
+    "description": "Play a sound. Takes in a script table of params.",
+    "description_zh": "播放声音。接受一个参数脚本表。"
+  },
+  {
+    "function": "EmitSoundOn",
+    "signature": "void EmitSoundOn(string, handle)",
+    "description": "Play named sound on Entity. Legacy only, use EmitSoundEx.",
+    "description_zh": "在实体上播放命名声音。仅限旧版，请使用 EmitSoundEx。"
+  },
+  {
+    "function": "EmitSoundOnClient",
+    "signature": "void EmitSoundOnClient(string, handle)",
+    "description": "Play named sound only on the client for the passed in player. NOTE: This only supports soundscripts. Legacy only, use EmitSoundEx.",
+    "description_zh": "仅在客户端为传入的玩家播放音效。注意：此功能仅支持音效脚本。仅限旧版，建议使用 EmitSoundEx。"
+  },
+  {
+    "function": "EntFire",
+    "signature": "function EntFire(target, action, value, delay, activator)",
+    "description": "Generate and entity i/o event",
+    "description_zh": "生成实体 I/O 事件"
+  },
+  {
+    "function": "EntFireByHandle",
+    "signature": "void EntFireByHandle(handle, string, string, float, handle, handle)",
+    "description": "Generate and entity i/o event. First parameter is an entity instance.",
+    "description_zh": "生成一个实体输入/输出事件。第一个参数是一个实体实例。"
+  },
+  {
+    "function": "EntIndexToHScript",
+    "signature": "handle EntIndexToHScript(int)",
+    "description": "Turn an entity index integer to an HScript representing that entity's script instance.",
+    "description_zh": "将实体索引整数转换为表示该实体脚本实例的HScript。"
+  },
+  {
+    "function": "FileToString",
+    "signature": "string FileToString(string)",
+    "description": "Reads a string from a file to send to script",
+    "description_zh": "从文件中读取字符串并发送到脚本"
+  },
+  {
+    "function": "FireGameEvent",
+    "signature": "bool FireGameEvent(string, handle)",
+    "description": "Fire a game event to a listening callback function in script. Parameters are passed in a squirrel table.",
+    "description_zh": "向脚本中的监听回调函数触发一个游戏事件。参数通过一个Squirrel表传递。"
+  },
+  {
+    "function": "FireScriptHook",
+    "signature": "bool FireScriptHook(string, handle)",
+    "description": "Fire a script hoook to a listening callback function in script. Parameters are passed in a squirrel table.",
+    "description_zh": "向脚本中的监听回调函数触发一个脚本钩子。参数通过一个Squirrel表传递。"
+  },
+  {
+    "function": "FrameTime",
+    "signature": "float FrameTime()",
+    "description": "Get the time spent on the server in the last frame",
+    "description_zh": "获取上一帧在服务器上花费的时间"
+  },
+  {
+    "function": "GetDeveloperLevel",
+    "signature": "int GetDeveloperLevel()",
+    "description": "Gets the level of 'developer'",
+    "description_zh": "获取“开发者”级别"
+  },
+  {
+    "function": "GetFrameCount",
+    "signature": "int GetFrameCount()",
+    "description": "Returns the engines current frame count",
+    "description_zh": "返回发动机当前的帧计数"
+  },
+  {
+    "function": "GetFriction",
+    "signature": "float GetFriction(handle)",
+    "description": "Returns the Friction on a player entity, meaningless if not a player",
+    "description_zh": "返回玩家实体的摩擦力，如果不是玩家则无意义"
+  },
+  {
+    "function": "GetListenServerHost",
+    "signature": "handle GetListenServerHost()",
+    "description": "Get the local player on a listen server.",
+    "description_zh": "在监听服务器上获取本地玩家。"
+  },
+  {
+    "function": "GetMapName",
+    "signature": "string GetMapName()",
+    "description": "Get the name of the map.",
+    "description_zh": "获取地图的名称。"
+  },
+  {
+    "function": "GetModelIndex",
+    "signature": "int GetModelIndex(string)",
+    "description": "Returns the index of the named model.",
+    "description_zh": "返回指定模型的索引。"
+  },
+  {
+    "function": "GetPhysAngularVelocity",
+    "signature": "Vector GetPhysAngularVelocity(handle)",
+    "description": "Get Angular Velocity for VPHYS or normal object",
+    "description_zh": "获取 VPHYS 或普通物体的角速度"
+  },
+  {
+    "function": "GetPhysVelocity",
+    "signature": "Vector GetPhysVelocity(handle)",
+    "description": "Get Velocity for VPHYS or normal object",
+    "description_zh": "获取 VPHYS 或普通物体的速度"
+  },
+  {
+    "function": "GetPlayerFromUserID",
+    "signature": "handle GetPlayerFromUserID(int)",
+    "description": "Given a user id, return the entity, or null",
+    "description_zh": "给定一个用户ID，返回对应的实体，或返回null"
+  },
+  {
+    "function": "GetSoundDuration",
+    "signature": "float GetSoundDuration(string, string)",
+    "description": "Returns float duration of the sound. Takes soundname and optional actormodelname.",
+    "description_zh": "返回声音的持续时间（浮点数）。需要声音名称和可选的角色模型名称。"
+  },
+  {
+    "function": "GetWeaponSoundFromString",
+    "signature": "int GetWeaponSoundFromString(string)",
+    "description": "Get weapon sound ID by name (empty, single_shot, reload, etc).",
+    "description_zh": "通过名称获取武器音效ID（空闲、单发射击、装填等）。"
+  },
+  {
+    "function": "HudMessage",
+    "signature": "void HudMessage(handle, string, float, float, int, int, int, float, float, float, float, int)",
+    "description": "Show a text message on screen",
+    "description_zh": "在屏幕上显示文本消息"
+  },
+  {
+    "function": "IsDedicatedServer",
+    "signature": "bool IsDedicatedServer()",
+    "description": "Returns true if this server is a dedicated server.",
+    "description_zh": "如果此服务器是专用服务器，则返回 true。"
+  },
+  {
+    "function": "IsModelPrecached",
+    "signature": "bool IsModelPrecached(string)",
+    "description": "Checks if the modelname is precached.",
+    "description_zh": "检查模型名称是否已预缓存。"
+  },
+  {
+    "function": "IsPlayerABot",
+    "signature": "bool IsPlayerABot(handle)",
+    "description": "Is this player/entity a bot",
+    "description_zh": "这个玩家/实体是否是机器人？"
+  },
+  {
+    "function": "IsSoundPrecached",
+    "signature": "bool IsSoundPrecached(string)",
+    "description": "Takes a sound name",
+    "description_zh": "获取一个声音名称"
+  },
+  {
+    "function": "LocalTime",
+    "signature": "void LocalTime(handle)",
+    "description": "Fills out a table with the local time (second, minute, hour, day, month, year, dayofweek, dayofyear, daylightsavings)",
+    "description_zh": "用本地时间（秒、分钟、小时、日、月、年、星期几、一年中的第几天、夏令时）填充表格"
+  },
+  {
+    "function": "MaxClients",
+    "signature": "int MaxClients()",
+    "description": "Get the current number of max clients set by the maxplayers command.",
+    "description_zh": "获取由maxplayers命令设置的当前最大客户端数量。"
+  },
+  {
+    "function": "PackColor",
+    "signature": "int PackColor(int, int, int, int)",
+    "description": "Packs 4 color channels into a single integer.",
+    "description_zh": "将4个颜色通道打包到一个整数中。"
+  },
+  {
+    "function": "PickupObject",
+    "signature": "void PickupObject(handle, handle)",
+    "description": "Have a player pickup a nearby named entity",
+    "description_zh": "让玩家拾起附近的命名实体"
+  },
+  {
+    "function": "PlayerInstanceFromIndex",
+    "signature": "handle PlayerInstanceFromIndex(int)",
+    "description": "Get a script instance of a player by index.",
+    "description_zh": "通过索引获取玩家的脚本实例。"
+  },
+  {
+    "function": "PrecacheEntityFromTable",
+    "signature": "bool PrecacheEntityFromTable(handle)",
+    "description": "Precache an entity from KeyValues in table",
+    "description_zh": "从表格中的KeyValues预缓存一个实体"
+  },
+  {
+    "function": "PrecacheModel",
+    "signature": "int PrecacheModel(string)",
+    "description": "Precache a model. Returns the modelindex.",
+    "description_zh": "预缓存模型。返回模型索引。"
+  },
+  {
+    "function": "PrecacheScriptSound",
+    "signature": "bool PrecacheScriptSound(string)",
+    "description": "Precache a sound.",
+    "description_zh": "预加载声音。"
+  },
+  {
+    "function": "PrecacheSound",
+    "signature": "bool PrecacheSound(string)",
+    "description": "Precache a sound.",
+    "description_zh": "预加载声音。"
+  },
+  {
+    "function": "RandomFloat",
+    "signature": "float RandomFloat(float, float)",
+    "description": "Generate a random floating point number within a range, inclusive",
+    "description_zh": "在指定范围内生成一个随机的浮点数（包括该范围的边界值）"
+  },
+  {
+    "function": "RandomInt",
+    "signature": "int RandomInt(int, int)",
+    "description": "Generate a random integer within a range, inclusive",
+    "description_zh": "生成一个指定范围内的随机整数，包含边界值"
+  },
+  {
+    "function": "RegisterScriptGameEventListener",
+    "signature": "void RegisterScriptGameEventListener(string)",
+    "description": "Register as a listener for a game event from script.",
+    "description_zh": "从脚本注册为游戏事件的监听器。"
+  },
+  {
+    "function": "RegisterScriptHookListener",
+    "signature": "void RegisterScriptHookListener(string)",
+    "description": "Register as a listener for a script hook from script.",
+    "description_zh": "注册为脚本钩子的监听器。"
+  },
+  {
+    "function": "RotateOrientation",
+    "signature": "QAngle RotateOrientation(QAngle, QAngle)",
+    "description": "Rotate a QAngle by another QAngle.",
+    "description_zh": "按另一个 QAngle 旋转一个 QAngle。"
+  },
+  {
+    "function": "RotatePosition",
+    "signature": "Vector RotatePosition(Vector, QAngle, Vector)",
+    "description": "Rotate a Vector around a point.",
+    "description_zh": "绕一点旋转向量"
+  },
+  {
+    "function": "Say",
+    "signature": "void Say(handle, string, bool)",
+    "description": "Have Entity say string, and teamOnly or not",
+    "description_zh": "让实体说出字符串，并指定是否仅对团队可见"
+  },
+  {
+    "function": "ScreenFade",
+    "signature": "void ScreenFade(handle, int, int, int, int, float, float, int)",
+    "description": "Start a screenfade with the following parameters. player, red, green, blue, alpha, flFadeTime, flFadeHold, flags",
+    "description_zh": "使用以下参数启动屏幕渐变效果：玩家、红色、绿色、蓝色、透明度、flFadeTime、flFadeHold、标志"
+  },
+  {
+    "function": "ScreenShake",
+    "signature": "void ScreenShake(Vector, float, float, float, float, int, bool)",
+    "description": "Start a screenshake with the following parameters. vecCenter, flAmplitude, flFrequency, flDuration, flRadius, eCommand( SHAKE_START = 0, SHAKE_STOP = 1 ), bAirShake",
+    "description_zh": "使用以下参数启动屏幕抖动。vecCenter，flAmplitude，flFrequency，flDuration，flRadius，eCommand（SHAKE_START = 0，SHAKE_STOP = 1），bAirShake"
+  },
+  {
+    "function": "ScriptAddCTWins",
+    "signature": "void ScriptAddCTWins(int)",
+    "description": "Add specified number of CT wins.",
+    "description_zh": "添加指定数量的CT胜利。"
+  },
+  {
+    "function": "ScriptAddTerroristWins",
+    "signature": "void ScriptAddTerroristWins(int)",
+    "description": "Add specified number of Terrorist wins.",
+    "description_zh": "添加指定数量的恐怖分子胜利。"
+  },
+  {
+    "function": "ScriptEndRound",
+    "signature": "void ScriptEndRound(int)",
+    "description": "End current round with a reason.",
+    "description_zh": "以一个理由结束当前回合。"
+  },
+  {
+    "function": "ScriptGetGameMode",
+    "signature": "int ScriptGetGameMode()",
+    "description": "Gets the current game mode.",
+    "description_zh": "获取当前游戏模式。"
+  },
+  {
+    "function": "ScriptGetGameModeConfig",
+    "signature": "handle ScriptGetGameModeConfig()",
+    "description": "Gets the config for current game mode.",
+    "description_zh": "获取当前游戏模式的配置。"
+  },
+  {
+    "function": "ScriptGetGameType",
+    "signature": "int ScriptGetGameType()",
+    "description": "Gets the current game type.",
+    "description_zh": "获取当前游戏类型。"
+  },
+  {
+    "function": "ScriptGetRoundsPlayed",
+    "signature": "int ScriptGetRoundsPlayed()",
+    "description": "Get the number of rounds played so far.",
+    "description_zh": "获取到目前为止进行的轮数。"
+  },
+  {
+    "function": "ScriptHooksEnabled",
+    "signature": "bool ScriptHooksEnabled()",
+    "description": "Returns whether script hooks are currently enabled.",
+    "description_zh": "返回脚本钩子当前是否已启用。"
+  },
+  {
+    "function": "ScriptIsWarmupPeriod",
+    "signature": "bool ScriptIsWarmupPeriod()",
+    "description": "Is it warmup or not.",
+    "description_zh": "这是预热还是不是？"
+  },
+  {
+    "function": "SendGlobalGameEvent",
+    "signature": "bool SendGlobalGameEvent(string, handle)",
+    "description": "Sends a real game event to everything. Parameters are passed in a squirrel table.",
+    "description_zh": "向所有对象发送一个真实的游戏事件。参数通过一个松鼠表传递。"
+  },
+  {
+    "function": "SendToConsole",
+    "signature": "void SendToConsole(string)",
+    "description": "Send a string to the console as a command",
+    "description_zh": "将字符串作为命令发送到控制台"
+  },
+  {
+    "function": "SendToConsoleServer",
+    "signature": "void SendToConsoleServer(string)",
+    "description": "Copy of SendToServerConsole with another name for compat.",
+    "description_zh": "用于兼容的 SendToServerConsole 的另一个名称。"
+  },
+  {
+    "function": "SendToServerConsole",
+    "signature": "void SendToServerConsole(string)",
+    "description": "Send a string that gets executed on the server as a ServerCommand. Respects sv_allow_point_servercommand.",
+    "description_zh": "发送一个字符串，在服务器上作为ServerCommand执行。遵守sv_allow_point_servercommand设置。"
+  },
+  {
+    "function": "SetFakeClientConVarValue",
+    "signature": "void SetFakeClientConVarValue(handle, string, string)",
+    "description": "Sets a USERINFO client ConVar for a fakeclient",
+    "description_zh": "为一个假客户端设置 USERINFO 客户端控制变量"
+  },
+  {
+    "function": "SetSkyboxTexture",
+    "signature": "void SetSkyboxTexture(string)",
+    "description": "Sets the current skybox texture",
+    "description_zh": "设置当前天空盒纹理"
+  },
+  {
+    "function": "ShowMessage",
+    "signature": "void ShowMessage(string)",
+    "description": "Print a hud message on all clients",
+    "description_zh": "在所有客户端上显示HUD消息"
+  },
+  {
+    "function": "SpawnEntityFromTable",
+    "signature": "handle SpawnEntityFromTable(string, handle)",
+    "description": "Spawn entity from KeyValues in table - 'name' is entity name, rest are KeyValues for spawn.",
+    "description_zh": "从表格中的KeyValues生成实体 - 'name' 是实体名称，其余为生成实体的KeyValues。"
+  },
+  {
+    "function": "SpawnEntityGroupFromTable",
+    "signature": "bool SpawnEntityGroupFromTable(handle)",
+    "description": "Hierarchically spawn an entity group from a set of spawn tables.",
+    "description_zh": "从一组生成表中分层生成一个实体组。"
+  },
+  {
+    "function": "StopAmbientSoundOn",
+    "signature": "void StopAmbientSoundOn(string, handle)",
+    "description": "Stop named ambient sound on an entity.",
+    "description_zh": "停止对实体的命名环境声音。"
+  },
+  {
+    "function": "StopSoundOn",
+    "signature": "void StopSoundOn(string, handle)",
+    "description": "Stop named sound on Entity.",
+    "description_zh": "停止实体的命名声音。"
+  },
+  {
+    "function": "StringToFile",
+    "signature": "bool StringToFile(string, string)",
+    "description": "Store a string to a file for later reading",
+    "description_zh": "将字符串存储到文件中以供以后读取"
+  },
+  {
+    "function": "Time",
+    "signature": "float Time()",
+    "description": "Get the current server time",
+    "description_zh": "获取当前服务器时间"
+  },
+  {
+    "function": "TraceHull",
+    "signature": "bool TraceHull(handle)",
+    "description": "Pass table - Inputs: start, end, hullmin, hullmax, mask, ignore  -- outputs: pos, fraction, hit, enthit, allsolid, startpos, endpos, startsolid, plane_normal, plane_dist, surface_name, surface_flags, surface_props",
+    "description_zh": "通过表 - 输入：起始点、终点、最小外壳、最大外壳、掩码、忽略 -- 输出：位置、分数、命中、实体命中、全部固体、起始位置、结束位置、起始固体、平面法线、平面距离、表面名称、表面标志、表面属性"
+  },
+  {
+    "function": "TraceLine",
+    "signature": "float TraceLine(Vector, Vector, handle)",
+    "description": "given 2 points & ent to ignore, return fraction along line that hits world or models",
+    "description_zh": "给定两点及需要忽略的实体，返回沿线段到达世界或模型的百分比位置"
+  },
+  {
+    "function": "TraceLineEx",
+    "signature": "bool TraceLineEx(handle)",
+    "description": "Pass table - Inputs: start, end, mask, ignore  -- outputs: pos, fraction, hit, enthit, allsolid, startpos, endpos, startsolid, plane_normal, plane_dist, surface_name, surface_flags, surface_props",
+    "description_zh": "传递表 - 输入：起始、结束、掩码、忽略  -- 输出：位置、分数、命中、实体命中、全部固体、起始位置、结束位置、起始是否为固体、平面法线、平面距离、表面名称、表面标志、表面属性"
+  },
+  {
+    "function": "TraceLinePlayersIncluded",
+    "signature": "float TraceLinePlayersIncluded(Vector, Vector, handle)",
+    "description": "given 2 points & ent to ignore, return fraction along line that hits world, models, players or npcs",
+    "description_zh": "给定两个点和一个需要忽略的对象，返回沿直线穿过世界、模型、玩家或NPC的百分比。"
+  },
+  {
+    "function": "UniqueString",
+    "signature": "function UniqueString(string)",
+    "description": "Generate a string guaranteed to be unique across the life of the script VM, with an optional root string. Useful for adding data to tables when not sure what keys are already in use in that table.",
+    "description_zh": "生成一个在脚本虚拟机生命周期内保证唯一的字符串，可选地包含一个根字符串。在不确定表中哪些键已被使用时，可用于向表中添加数据。"
+  }
+]
