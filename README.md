@@ -43,8 +43,8 @@ All content is AI-generated, including translation and structure, and is for ref
 
 ## 使用方法 / How to Use
 
-1. 下载并解压本程序。  
-   Download and extract this application.
+1. 下载并解压本程序。 <a href="https://github.com/nanhui233/Counter-Strike-Source-Offensive-VScripts-API/releases">点我下载</a> 
+   Download and extract this application.<a href="https://github.com/nanhui233/Counter-Strike-Source-Offensive-VScripts-API/releases">Click Download</a> 
 
 2. 双击运行 `文档EXE.exe`（或你打包的 exe 文件）。  
    Double-click `文档EXE.exe` (or your packaged exe file).
