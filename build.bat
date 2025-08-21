@@ -1,0 +1,3 @@
+@echo off
+title building...
+npx electron-packager . CSSO_VScript_API_Doc_offline --platform=win32 --arch=x64 --icon=./icon.ico
