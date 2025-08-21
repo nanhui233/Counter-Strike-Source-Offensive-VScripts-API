@@ -71,8 +71,7 @@ All content is AI-generated, including translation and structure, and is for ref
 If you find any incorrect or missing entries, please submit and supplement them in the issue section.  
 Please follow the function or class format in `functions.json` for your feedback.
 
----
-
+```json
 [
   {
     "function": "函数名或类名::方法名",
@@ -81,6 +80,7 @@ Please follow the function or class format in `functions.json` for your feedback
     "description_zh": "中文描述"
   }
 ]
+```
 
 > Powered by Electron & AI  
 > © 2025 南方の辉 & Contributors
